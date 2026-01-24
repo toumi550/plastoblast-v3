@@ -6,15 +6,15 @@ const allProducts = [
     name: 'CBOX-AJ120',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-aj120-camera-cctv-dahua-hikvision.webp',
+    image2: 'assets/images/products/boite-jonction-aj120-camera-cctv-dahua-hikvision.webp',
     altText: 'Boîte de jonction CBOX-AJ120, résistante et étanche pour caméras dôme ou bullet.',
     description: 'La CBOX-AJ120 PlastoBlast, est une boîte de jonction hautement résistante et étanche, avec un design ergonomique conçue pour accueillir des caméras dôme ou bullet. Sa conception étanche et son esthétique en font une boîte de jonction très compacte, parfaite pour les installations discrètes en intérieur comme en extérieur. Protection étanche garantie contre les intempéries et l\'humidité.',
     features: [
       'Compatibilité quasi universelle',
       'Haute résistance',
-      'Étanche',
+      '150 Pièces/carton',
       'Plastique PP anti-UV',
-      'Installation facilitée',
-      '150 Pièces/carton'
+      'Installation facilitée'
     ],
     specs: {
       dimensions: '40mm(H)x125mm(L)x45mm(P)',
@@ -28,15 +28,15 @@ const allProducts = [
     name: 'AJ-140',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-aj140-camera-cctv-dahua-hikvision.webp',
+    image2: 'assets/images/products/boite-jonction-aj140-camera-cctv-dahua-hikvision.webp',
     altText: 'Boîte de jonction grand format AJ-140.',
     description: 'La CBOX-AJ140 PlastoBlast, est une boîte de jonction hautement résistante et étanche, conçue pour accueillir des caméras dôme ou IP/PoE. Sa conception robuste et étanche avec son esthétique sobre en font un choix idéal pour les installations discrètes, en intérieur comme en extérieur. Protection étanche certifiée contre les conditions météorologiques extrêmes.',
     features: [
       'Compatibilité universelle',
       'Haute résistance',
-      'Étanche',
+      '100 Pièces/carton',
       'Plastique PP anti-UV',
-      'Installation facilitée',
-      '100 Pièces/carton'
+      'Installation facilitée'
     ],
     specs: {
       dimensions: '70mm(H)x140mm(L)x50mm(P)',
@@ -50,15 +50,15 @@ const allProducts = [
     name: 'SJ-110',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-sj110-camera-cctv-dome-bullet-dahua-hikvision.webp',
+    image2: 'assets/images/products/boite-jonction-sj110-camera-cctv-dome-bullet-dahua-hikvision.webp',
     altText: 'Boîte de jonction compacte SJ-110.',
     description: 'La CBOX-SJ110 PlastoBlast, est une boîte de jonction hautement résistante et étanche, conçue pour accueillir des caméras dôme ou Bullet. Sa conception robuste et étanche avec son esthétique sobre en font un choix idéal pour les installations discrètes, en intérieur comme en extérieur. Étanchéité optimale pour une protection durable contre l\'humidité et les intempéries.',
     features: [
       'Compatibilité universelle',
       'Haute résistance',
-      'Étanche',
+      '200 Pièces/carton',
       'Plastique PP anti-UV',
-      'Installation facilitée',
-      '200 Pièces/carton'
+      'Installation facilitée'
     ],
     specs: {
       dimensions: '50mm(H)x113mm(L)x45mm(Pr)',
@@ -73,16 +73,16 @@ const allProducts = [
     name: 'WS15-D',
     category: 'supports',
     image: 'assets/images/products/support-mural-droit-ws15d-15cm-camera-cctv-dahua-hikvision.webp',
-    altText: 'Support mural droit WS15-D de 15cm en alliage pour caméras de surveillance CCTV, compatible Dahua et Hikvision.',
-    description: 'Support mural droit WS15-D de 15cm pour caméras de surveillance. Idéal pour Dahua et Hikvision. Conception étanche avec protection intégrée contre les infiltrations d\'eau et l\'humidité, garantissant une installation durable en extérieur.',
+    image2: 'assets/images/products/support-mural-droit-ws15d-15cm-camera-cctv-dahua-hikvision.webp',
+    altText: 'Support mural droit WS15-D',
+    description: 'Support mural WS15-D - Support droit de 15cm pour caméras de surveillance. Conception étanche avec protection intégrée contre les infiltrations d\'eau et l\'humidité, garantissant une installation durable en extérieur.',
     features: [
       'Longueur 15cm',
       'Installation murale',
-      'Étanche',
+      '50 Pièces/carton',
       'Alliage résistant',
       'Finition anti-corrosion',
-      'Tube 2 mm d\'épaisseur',
-      '50 Pièces/carton'
+      'Tube 2 mm d\'épaisseur'
     ],
     specs: {
       longueur: '150 mm',
@@ -95,16 +95,16 @@ const allProducts = [
     name: 'WS30-L',
     category: 'supports',
     image: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.webp',
-    altText: 'Support mural en L WS30-L de 30cm pour installation flexible de caméras CCTV, compatible Dahua et Hikvision.',
-    description: 'Support mural en L WS30-L de 30cm pour installation flexible. Convient aux caméras Dahua et Hikvision. Design étanche avec joints d\'étanchéité renforcés pour une protection maximale contre l\'humidité et les conditions météorologiques difficiles.',
+    image2: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.webp',
+    altText: 'Support mural WS30-L',
+    description: 'Support mural WS30-L - Support en L de 30cm pour installation flexible. Design étanche avec joints d\'étanchéité renforcés pour une protection maximale contre l\'humidité et les conditions météorologiques difficiles.',
     features: [
       'Forme en L',
       'Longueur 30cm',
-      'Étanche',
+      '36 Pièces/carton',
       'Grande stabilité',
       'Installation polyvalente',
-      'Tube 2 mm d\'épaisseur',
-      '36 Pièces/carton'
+      'Tube 2 mm d\'épaisseur'
     ],
     specs: {
       longueur: '300 mm',
@@ -117,16 +117,16 @@ const allProducts = [
     name: 'WS30-T',
     category: 'supports',
     image: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.webp',
-    altText: 'Support mural télescopique WS30-T de 30cm pour réglage précis de caméras CCTV, compatible Dahua et Hikvision.',
-    description: 'Support mural télescopique WS30-T de 30cm pour réglage précis. Adapté pour Dahua et Hikvision. Mécanisme télescopique étanche avec protection contre les infiltrations d\'eau dans les articulations, assurant un fonctionnement optimal même en conditions humides.',
+    image2: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.webp',
+    altText: 'Support mural WS30-T',
+    description: 'Support mural WS30-T - Support télescopique de 30cm pour réglage précis. Mécanisme télescopique étanche avec protection contre les infiltrations d\'eau dans les articulations, assurant un fonctionnement optimal même en conditions humides.',
     features: [
       'Longueur réglable',
       'Fixation solide',
-      'Étanche',
+      '36 Pièces/carton',
       'Ajustement précis',
       'Installation facile',
-      'Tube 2 mm d\'épaisseur',
-      '36 Pièces/carton'
+      'Tube 2 mm d\'épaisseur'
     ],
     specs: {
       longueur: '300 mm',
@@ -139,16 +139,16 @@ const allProducts = [
     name: 'WS30-T90°',
     category: 'supports',
     image: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.webp',
-    altText: 'Support mural à angle droit WS30-T90° de 30cm pour installation en coin de caméras CCTV, compatible Dahua et Hikvision.',
-    description: 'Support mural à angle droit WS30-T90° de 30cm pour installation en coin. Idéal pour caméras Dahua et Hikvision. Construction étanche avec joints d\'étanchéité spéciaux aux angles pour une protection complète contre l\'humidité et les infiltrations d\'eau.',
+    image2: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.webp',
+    altText: 'Support mural WS30-T90°',
+    description: 'Support mural WS30-T90° - Support à angle droit de 30cm pour installation en coin. Construction étanche avec joints d\'étanchéité spéciaux aux angles pour une protection complète contre l\'humidité et les infiltrations d\'eau.',
     features: [
       'Angle 90°',
       'Montage en coin',
-      'Étanche',
+      '30 Pièces/carton',
       'Stabilité optimale',
       'Design compact',
-      'Tube 2 mm d\'épaisseur',
-      '30 Pièces/carton'
+      'Tube 2 mm d\'épaisseur'
     ],
     specs: {
       longueur: '300 mm',
@@ -161,16 +161,16 @@ const allProducts = [
     name: 'WS50-D',
     category: 'supports',
     image: 'assets/images/products/support-mural-droit-ws50d-50cm-camera-cctv-dahua-hikvision.webp',
-    altText: 'Support mural droit WS50-D de 50cm en alliage renforcé pour installations longues portées de caméras CCTV, compatible Dahua et Hikvision.',
-    description: 'Support mural droit WS50-D de 50cm pour installations longues portées. Parfait pour Dahua et Hikvision. Conception étanche avec protection renforcée sur toute la longueur, garantissant une résistance optimale aux intempéries et à l\'humidité même sur de longues distances.',
+    image2: 'assets/images/products/support-mural-droit-ws50d-50cm-camera-cctv-dahua-hikvision.webp',
+    altText: 'Support mural WS50-D',
+    description: 'Support mural WS50-D - Support droit de 50cm pour installations longues portées. Conception étanche avec protection renforcée sur toute la longueur, garantissant une résistance optimale aux intempéries et à l\'humidité même sur de longues distances.',
     features: [
       'Longueur 50cm',
       'Renforts internes',
-      'Étanche',
+      '25 Pièces/carton',
       'Résistance accrue',
       'Installation murale',
-      'Tube 2 mm d\'épaisseur',
-      '25 Pièces/carton'
+      'Tube 2 mm d\'épaisseur'
     ],
     specs: {
       longueur: '500 mm',
@@ -390,13 +390,38 @@ function createProductCard(product, index) {
   
   card.innerHTML = `
     <div class="product-image-container">
-      <img
-        src="${product.image}"
-        alt="${product.altText || product.name}"
-        class="product-image"
-        loading="lazy"
-        onerror="this.src='/assets/images/placeholder-product.jpg'"
-      >
+      <div class="product-carousel" id="carousel-${product.id}-${index}">
+        <div class="carousel-images">
+          <img
+            src="${product.image}"
+            alt="${product.altText || product.name} - Image 1"
+            class="product-image active"
+            loading="lazy"
+            onerror="this.src='/assets/images/placeholder-product.jpg'"
+          >
+          <img
+            src="${product.image2 || product.image}"
+            alt="${product.altText || product.name} - Image 2"
+            class="product-image"
+            loading="lazy"
+            onerror="this.src='/assets/images/placeholder-product.jpg'"
+          >
+        </div>
+        <button class="carousel-btn carousel-prev" onclick="changeCarouselImage('carousel-${product.id}-${index}', -1)" aria-label="Image précédente">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button class="carousel-btn carousel-next" onclick="changeCarouselImage('carousel-${product.id}-${index}', 1)" aria-label="Image suivante">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+        <div class="carousel-indicators">
+          <span class="indicator active" onclick="goToCarouselImage('carousel-${product.id}-${index}', 0)"></span>
+          <span class="indicator" onclick="goToCarouselImage('carousel-${product.id}-${index}', 1)"></span>
+        </div>
+      </div>
       <div class="product-overlay">
         <button class="btn-icon" onclick="viewProductDetails('${product.category}', ${product.id})" aria-label="Voir les détails de ${product.name}">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -415,20 +440,7 @@ function createProductCard(product, index) {
         Voir plus
       </span>
       <div class="product-features">
-        ${product.features.filter(feature => {
-          const featureLower = feature.toLowerCase();
-          return featureLower === 'étanche' || 
-                 featureLower === 'etanche' ||
-                 featureLower.includes('ip65') || 
-                 featureLower.includes('protection ip');
-        }).slice(0, 1).map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
-        ${product.features.filter(feature => {
-          const featureLower = feature.toLowerCase();
-          return featureLower !== 'étanche' && 
-                 featureLower !== 'etanche' &&
-                 !featureLower.includes('ip65') && 
-                 !featureLower.includes('protection ip');
-        }).slice(0, 2).map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
+        ${product.features.slice(0, 3).map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
       </div>
       <div class="product-specs">
         <div class="spec-item">
@@ -449,16 +461,17 @@ function createProductCard(product, index) {
           Détails
         </button>
         <a 
-          href="https://wa.me/213560006906?text=Bonjour, je souhaiterais obtenir un devis pour le produit : ${product.name}"
-          class="btn-whatsapp"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Contacter sur WhatsApp pour ${product.name}"
+          href="assets/downloads/fiches-techniques/${product.category}/${product.name}.pdf"
+          class="btn-download"
+          download
+          aria-label="Télécharger la fiche technique de ${product.name}"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
           </svg>
-          WhatsApp
+          Fiche technique
         </a>
       </div>
     </div>
@@ -527,6 +540,38 @@ showCategories = function() {
   setTimeout(initScrollRevealForNewElements, 100);
 };
 
+// Fonctions de navigation du carrousel
+function changeCarouselImage(carouselId, direction) {
+  const carousel = document.getElementById(carouselId);
+  if (!carousel) return;
+  
+  const images = carousel.querySelectorAll('.product-image');
+  const indicators = carousel.querySelectorAll('.indicator');
+  let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+  
+  images[currentIndex].classList.remove('active');
+  indicators[currentIndex].classList.remove('active');
+  
+  currentIndex = (currentIndex + direction + images.length) % images.length;
+  
+  images[currentIndex].classList.add('active');
+  indicators[currentIndex].classList.add('active');
+}
+
+function goToCarouselImage(carouselId, index) {
+  const carousel = document.getElementById(carouselId);
+  if (!carousel) return;
+  
+  const images = carousel.querySelectorAll('.product-image');
+  const indicators = carousel.querySelectorAll('.indicator');
+  
+  images.forEach(img => img.classList.remove('active'));
+  indicators.forEach(ind => ind.classList.remove('active'));
+  
+  images[index].classList.add('active');
+  indicators[index].classList.add('active');
+}
+
 // Export pour utilisation globale
 window.ProductsApp = {
   allProducts,
@@ -535,3 +580,7 @@ window.ProductsApp = {
   showCategoryProducts,
   viewProductDetails
 };
+
+// Export des fonctions carousel pour utilisation globale
+window.changeCarouselImage = changeCarouselImage;
+window.goToCarouselImage = goToCarouselImage;
