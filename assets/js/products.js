@@ -3,18 +3,16 @@ const allProducts = [
   // Boîtes de jonction
   {
     id: 1,
-    name: 'CBOX-AJ120',
+    name: 'AJ 120',
+    prix: 125.00,
     category: 'boites',
     image: 'assets/images/products/boite-jonction-aj120-camera-cctv-dahua-hikvision.webp',
     image2: 'assets/images/products/boite-jonction-aj120-camera-cctv-dahua-hikvision.webp',
-    altText: 'Boîte de jonction CBOX-AJ120, résistante et étanche pour caméras dôme ou bullet.',
-    description: 'La CBOX-AJ120 PlastoBlast, est une boîte de jonction hautement résistante et étanche, avec un design ergonomique conçue pour accueillir des caméras dôme ou bullet. Sa conception étanche et son esthétique en font une boîte de jonction très compacte, parfaite pour les installations discrètes en intérieur comme en extérieur. Protection étanche garantie contre les intempéries et l\'humidité.',
+    altText: 'Boîte de jonction AJ 120',
+    description: 'Boîte pour caméras dome/bullet, étanche\nPlage de diamètres 25~90 mm\nPlastique traité Utilisable en extérieur/interieur\nDimensions : 40 (H) x 125 (L) x 45 (Pr) mm\n150 PIÈCES / CARTON',
     features: [
-      'Compatibilité quasi universelle',
-      'Haute résistance',
-      '150 Pièces/carton',
-      'Plastique PP anti-UV',
-      'Installation facilitée'
+      'Tube 2 mm d\'épaisseur',
+      '150 Pièces/carton'
     ],
     specs: {
       dimensions: '40mm(H)x125mm(L)x45mm(P)',
@@ -25,18 +23,16 @@ const allProducts = [
   },
   {
     id: 2,
-    name: 'AJ-140',
+    name: 'AJ 140',
+    prix: 140.00,
     category: 'boites',
     image: 'assets/images/products/boite-jonction-aj140-camera-cctv-dahua-hikvision.webp',
     image2: 'assets/images/products/boite-jonction-aj140-camera-cctv-dahua-hikvision.webp',
-    altText: 'Boîte de jonction grand format AJ-140.',
-    description: 'La CBOX-AJ140 PlastoBlast, est une boîte de jonction hautement résistante et étanche, conçue pour accueillir des caméras dôme ou IP/PoE. Sa conception robuste et étanche avec son esthétique sobre en font un choix idéal pour les installations discrètes, en intérieur comme en extérieur. Protection étanche certifiée contre les conditions météorologiques extrêmes.',
+    altText: 'Boîte de jonction AJ 140',
+    description: 'Boîte pour caméras dome/bullet, étanche\nPlage de diamètres 30~110 mm\nPlastique traité Utilisable en extérieur/interieur\nDimensions : 70 (H) x 140 (L) x 50 (Pr) mm\n100 PIÈCES / CARTON',
     features: [
-      'Compatibilité universelle',
-      'Haute résistance',
-      '100 Pièces/carton',
-      'Plastique PP anti-UV',
-      'Installation facilitée'
+      'Tube 2 mm d\'épaisseur',
+      '100 Pièces/carton'
     ],
     specs: {
       dimensions: '70mm(H)x140mm(L)x50mm(P)',
@@ -47,18 +43,16 @@ const allProducts = [
   },
   {
     id: 3,
-    name: 'SJ-110',
+    name: 'SJ 110',
+    prix: 110.00,
     category: 'boites',
     image: 'assets/images/products/boite-jonction-sj110-camera-cctv-dome-bullet-dahua-hikvision.webp',
     image2: 'assets/images/products/boite-jonction-sj110-camera-cctv-dome-bullet-dahua-hikvision.webp',
-    altText: 'Boîte de jonction compacte SJ-110.',
-    description: 'La CBOX-SJ110 PlastoBlast, est une boîte de jonction hautement résistante et étanche, conçue pour accueillir des caméras dôme ou Bullet. Sa conception robuste et étanche avec son esthétique sobre en font un choix idéal pour les installations discrètes, en intérieur comme en extérieur. Étanchéité optimale pour une protection durable contre l\'humidité et les intempéries.',
+    altText: 'Boîte de jonction SJ 110',
+    description: 'Boîte pour caméras dome/bullet, étanche\nPlage de diamètres 28~90 mm\nPlastique traité Utilisable en extérieur/interieur\nDimensions : 50 (H) x 113 (L) x 45 (Pr) mm\n200 PIÈCES / CARTON',
     features: [
-      'Compatibilité universelle',
-      'Haute résistance',
-      '200 Pièces/carton',
-      'Plastique PP anti-UV',
-      'Installation facilitée'
+      'Tube 2 mm d\'épaisseur',
+      '200 Pièces/carton'
     ],
     specs: {
       dimensions: '50mm(H)x113mm(L)x45mm(Pr)',
@@ -71,18 +65,15 @@ const allProducts = [
   {
     id: 4,
     name: 'WS15-D',
+    prix: 300.00,
     category: 'supports',
     image: 'assets/images/products/support-mural-droit-ws15d-15cm-camera-cctv-dahua-hikvision.webp',
     image2: 'assets/images/products/support-mural-droit-ws15d-15cm-camera-cctv-dahua-hikvision.webp',
     altText: 'Support mural droit WS15-D',
     description: 'Support mural WS15-D - Support droit de 15cm pour caméras de surveillance. Conception étanche avec protection intégrée contre les infiltrations d\'eau et l\'humidité, garantissant une installation durable en extérieur.',
     features: [
-      'Longueur 15cm',
-      'Installation murale',
-      '50 Pièces/carton',
-      'Alliage résistant',
-      'Finition anti-corrosion',
-      'Tube 2 mm d\'épaisseur'
+      'Tube 2 mm d\'épaisseur',
+      '50 Pièces/carton'
     ],
     specs: {
       longueur: '150 mm',
@@ -93,18 +84,15 @@ const allProducts = [
   {
     id: 5,
     name: 'WS30-L',
+    prix: 600.00,
     category: 'supports',
     image: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.webp',
     image2: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.webp',
     altText: 'Support mural WS30-L',
     description: 'Support mural WS30-L - Support en L de 30cm pour installation flexible. Design étanche avec joints d\'étanchéité renforcés pour une protection maximale contre l\'humidité et les conditions météorologiques difficiles.',
     features: [
-      'Forme en L',
-      'Longueur 30cm',
-      '36 Pièces/carton',
-      'Grande stabilité',
-      'Installation polyvalente',
-      'Tube 2 mm d\'épaisseur'
+      'Tube 2 mm d\'épaisseur',
+      '36 Pièces/carton'
     ],
     specs: {
       longueur: '300 mm',
@@ -115,18 +103,15 @@ const allProducts = [
   {
     id: 6,
     name: 'WS30-T',
+    prix: 1000.00,
     category: 'supports',
     image: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.webp',
     image2: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.webp',
     altText: 'Support mural WS30-T',
     description: 'Support mural WS30-T - Support télescopique de 30cm pour réglage précis. Mécanisme télescopique étanche avec protection contre les infiltrations d\'eau dans les articulations, assurant un fonctionnement optimal même en conditions humides.',
     features: [
-      'Longueur réglable',
-      'Fixation solide',
-      '36 Pièces/carton',
-      'Ajustement précis',
-      'Installation facile',
-      'Tube 2 mm d\'épaisseur'
+      'Tube 2 mm d\'épaisseur',
+      '30 Pièces/carton'
     ],
     specs: {
       longueur: '300 mm',
@@ -137,18 +122,15 @@ const allProducts = [
   {
     id: 7,
     name: 'WS30-T90°',
+    prix: 1200.00,
     category: 'supports',
     image: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.webp',
     image2: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.webp',
     altText: 'Support mural WS30-T90°',
     description: 'Support mural WS30-T90° - Support à angle droit de 30cm pour installation en coin. Construction étanche avec joints d\'étanchéité spéciaux aux angles pour une protection complète contre l\'humidité et les infiltrations d\'eau.',
     features: [
-      'Angle 90°',
-      'Montage en coin',
-      '30 Pièces/carton',
-      'Stabilité optimale',
-      'Design compact',
-      'Tube 2 mm d\'épaisseur'
+      'Tube 2 mm d\'épaisseur',
+      '30 Pièces/carton'
     ],
     specs: {
       longueur: '300 mm',
@@ -159,18 +141,15 @@ const allProducts = [
   {
     id: 8,
     name: 'WS50-D',
+    prix: 700.00,
     category: 'supports',
     image: 'assets/images/products/support-mural-droit-ws50d-50cm-camera-cctv-dahua-hikvision.webp',
     image2: 'assets/images/products/support-mural-droit-ws50d-50cm-camera-cctv-dahua-hikvision.webp',
     altText: 'Support mural WS50-D',
     description: 'Support mural WS50-D - Support droit de 50cm pour installations longues portées. Conception étanche avec protection renforcée sur toute la longueur, garantissant une résistance optimale aux intempéries et à l\'humidité même sur de longues distances.',
     features: [
-      'Longueur 50cm',
-      'Renforts internes',
-      '25 Pièces/carton',
-      'Résistance accrue',
-      'Installation murale',
-      'Tube 2 mm d\'épaisseur'
+      'Tube 2 mm d\'épaisseur',
+      '25 Pièces/carton'
     ],
     specs: {
       longueur: '500 mm',
@@ -383,97 +362,65 @@ function displayProducts(products) {
 function createProductCard(product, index) {
   const card = document.createElement('div');
   card.className = 'product-card scroll-reveal';
+  card.setAttribute('data-category', product.category);
   card.style.animationDelay = `${index * 0.1}s`;
   
   // Générer un ID unique pour cette description
   const descriptionId = `desc-${product.id}-${index}`;
   
   card.innerHTML = `
-    <div class="product-image-container">
-      <div class="product-carousel" id="carousel-${product.id}-${index}">
-        <div class="carousel-images">
-          <img
-            src="${product.image}"
-            alt="${product.altText || product.name} - Image 1"
-            class="product-image active"
-            loading="lazy"
-            onerror="this.src='/assets/images/placeholder-product.jpg'"
-          >
-          <img
-            src="${product.image2 || product.image}"
-            alt="${product.altText || product.name} - Image 2"
-            class="product-image"
-            loading="lazy"
-            onerror="this.src='/assets/images/placeholder-product.jpg'"
-          >
+    <div class="product-header-green">
+      <h3 class="product-name-header">${product.name}</h3>
+    </div>
+    <div class="product-body-mockup">
+      ${product.prix ? `
+      <div class="product-price-section">
+        <div class="product-price-badge">
+          <span class="price-label">à partir de</span>
         </div>
-        <button class="carousel-btn carousel-prev" onclick="changeCarouselImage('carousel-${product.id}-${index}', -1)" aria-label="Image précédente">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="15 18 9 12 15 6"></polyline>
-          </svg>
-        </button>
-        <button class="carousel-btn carousel-next" onclick="changeCarouselImage('carousel-${product.id}-${index}', 1)" aria-label="Image suivante">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
-        </button>
-        <div class="carousel-indicators">
-          <span class="indicator active" onclick="goToCarouselImage('carousel-${product.id}-${index}', 0)"></span>
-          <span class="indicator" onclick="goToCarouselImage('carousel-${product.id}-${index}', 1)"></span>
+        <div class="product-price-display">
+          <span class="price-amount">${product.prix.toFixed(2)}</span>
+          <span class="price-currency">da</span>
         </div>
       </div>
-      <div class="product-overlay">
-        <button class="btn-icon" onclick="viewProductDetails('${product.category}', ${product.id})" aria-label="Voir les détails de ${product.name}">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-            <circle cx="12" cy="12" r="3"/>
-          </svg>
-        </button>
+      ` : ''}
+      <div class="product-image-section">
+        <div class="product-carousel" id="carousel-${product.id}-${index}">
+          <div class="carousel-images">
+            <img
+              src="${product.image}"
+              alt="${product.altText || product.name} - Image 1"
+              class="product-image active"
+              loading="lazy"
+              onerror="this.src='/assets/images/placeholder-product.jpg'"
+            >
+            <img
+              src="${product.image2 || product.image}"
+              alt="${product.altText || product.name} - Image 2"
+              class="product-image"
+              loading="lazy"
+              onerror="this.src='/assets/images/placeholder-product.jpg'"
+            >
+          </div>
+          <button class="carousel-btn carousel-prev" onclick="changeCarouselImage('carousel-${product.id}-${index}', -1)" aria-label="Image précédente">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-btn carousel-next" onclick="changeCarouselImage('carousel-${product.id}-${index}', 1)" aria-label="Image suivante">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+          <div class="carousel-indicators">
+            <span class="indicator active" onclick="goToCarouselImage('carousel-${product.id}-${index}', 0)"></span>
+            <span class="indicator" onclick="goToCarouselImage('carousel-${product.id}-${index}', 1)"></span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="product-content">
-      <h3 class="product-title">${product.name}</h3>
-      <div class="product-description truncated" id="${descriptionId}">
-        ${product.description}
-      </div>
-      <span class="description-toggle" onclick="toggleDescription('${descriptionId}')">
-        Voir plus
-      </span>
-      <div class="product-features">
-        ${product.features.slice(0, 3).map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
-      </div>
-      <div class="product-specs">
-        <div class="spec-item">
-          <span class="spec-label">Dimensions:</span>
-          <span class="spec-value">${product.specs.dimensions || product.specs.longueur}</span>
-        </div>
-      </div>
-      <div class="product-actions">
-        <button 
-          class="btn-secondary"
-          onclick="viewProductDetails('${product.category}', ${product.id})"
-          aria-label="Voir les détails de ${product.name}"
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-            <circle cx="12" cy="12" r="3"/>
-          </svg>
-          Détails
-        </button>
-        <a 
-          href="assets/downloads/fiches-techniques/${product.category}/${product.name}.pdf"
-          class="btn-download"
-          download
-          aria-label="Télécharger la fiche technique de ${product.name}"
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
-          Fiche technique
-        </a>
-      </div>
+    <div class="product-description-bottom">
+      ${product.features.slice(-2).join('<br>')}
     </div>
   `;
   

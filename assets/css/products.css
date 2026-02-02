@@ -225,12 +225,17 @@
 /* Product Filters */
 .product-filters {
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .search-bar {
   position: relative;
+  flex: 1;
   max-width: 400px;
-  margin: 0 auto;
 }
 
 .search-bar svg {
@@ -267,10 +272,11 @@
 .product-card {
   background: white;
   border-radius: 1rem;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: var(--shadow);
   transition: all 0.3s ease;
   position: relative;
+  border: 3px solid var(--primary-green);
 }
 
 .product-card:hover {
@@ -287,6 +293,7 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  padding-top: 1.5rem;
 }
 
 .product-image {
@@ -472,6 +479,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  
   .page-title {
     font-size: 2rem;
   }
@@ -530,5 +541,199 @@
   
   .product-image-container {
     height: 200px;
+  }
+}
+
+/* Green Header for Product Cards */
+.product-header-green {
+  background: linear-gradient(135deg, #2d8f4f 0%, #52c273 100%);
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  text-align: center;
+}
+
+.product-name-header {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Product Body - Mockup Layout */
+.product-body-mockup {
+  position: relative;
+  padding: 1.5rem;
+  padding-top: 5rem;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-price-section {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  z-index: 5;
+}
+
+.product-image-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Align junction boxes center, supports right */
+.product-card[data-category="boites"] .product-image-section {
+  justify-content: center;
+}
+
+.product-card[data-category="supports"] .product-image-section {
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+/* Price Badge - Only "à partir de" */
+.product-price-badge {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  width: fit-content;
+}
+
+.price-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin: 0;
+}
+
+/* Price Display - Large Black Text */
+.product-price-display {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.price-amount {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  line-height: 1;
+}
+
+.price-currency {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+/* Description at Bottom */
+.product-description-bottom {
+  padding: 1rem 1.5rem;
+  color: var(--gray-700);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  border-top: 1px solid var(--gray-200);
+  text-align: left;
+}
+
+/* Image Container - Extra Large */
+.product-image-section .product-carousel {
+  width: 100%;
+  max-width: 280px;
+  height: 280px;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.product-image-section .carousel-images {
+  width: 100%;
+  height: 100%;
+}
+
+.product-image-section .product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Fix carousel button visibility - STRONG CONTRAST */
+.product-image-section .carousel-btn {
+  background: rgba(0, 0, 0, 0.7);
+  border: 3px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+}
+
+.product-image-section .carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  border-color: var(--primary-green);
+  transform: scale(1.2);
+}
+
+.product-image-section .carousel-btn svg {
+  stroke: white;
+  stroke-width: 3;
+}
+
+.product-image-section .carousel-indicators {
+  bottom: -25px;
+}
+
+.product-image-section .indicator {
+  background: var(--gray-300);
+  border: 2px solid var(--primary-green);
+}
+
+.product-image-section .indicator.active {
+  background: var(--primary-green);
+}
+
+/* Responsive adjustments for mockup layout */
+@media (max-width: 768px) {
+  .product-name-header {
+    font-size: 1.2rem;
+  }
+  
+  .product-body-mockup {
+    padding: 1rem;
+    padding-top: 4.5rem;
+    min-height: 320px;
+  }
+  
+  .product-price-section {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  
+  .product-card[data-category="supports"] .product-image-section {
+    justify-content: center;
+    padding-right: 0;
+  }
+  
+  .product-image-section .product-carousel {
+    max-width: 250px;
+    height: 250px;
+  }
+  
+  .price-amount {
+    font-size: 1.5rem;
+  }
+  
+  .product-description-bottom {
+    text-align: center;
   }
 }
