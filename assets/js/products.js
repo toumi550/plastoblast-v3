@@ -1,39 +1,38 @@
 // Données complètes des produits
 const allProducts = [
-  // Boîtes de jonction
   {
     id: 1,
     name: 'AJ 120',
     category: 'boites',
-    image: 'assets/images/hero/AJ120-4.webp',
-    image2: 'assets/images/hero/AJ120-5.webp',
+    image: 'assets/images/products/boite-jonction-aj120-camera-cctv-dahua-hikvision.jpg',
+    image2: 'assets/images/products/boite-jonction-aj120(2)-camera-cctv-dahua-hikvision.jpg',
     altText: 'Boîte de jonction AJ 120',
-    description: 'Boîte pour caméras dome/bullet, étanche\nPlage de diamètres 25~90 mm\nPlastique traité Utilisable en extérieur/interieur\nDimensions : 40 (H) x 125 (L) x 45 (Pr) mm\n150 PIÈCES / CARTON',
+    description: 'Boîte de jonction étanche pour caméras dome et bullet, conçue pour une installation propre en intérieur comme en extérieur.',
     features: [
-      'Tube 2 mm d\'épaisseur',
+      'Étanche intérieur/extérieur',
       '150 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/AJ 120MM 2.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique  AJ 120MM.pdf',
     specs: {
       dimensions: '40mm(H)x125mm(L)x45mm(P)',
       poids: '101g',
       matériau: 'Plastique (PP), anti-UV, anti-choc',
-      compatibilité: 'Rayon de fixation 25mm à 90mm'
+      compatibilité: 'Plage de diamètres 25mm à 90mm'
     }
   },
   {
     id: 2,
     name: 'AJ 140',
     category: 'boites',
-    image: 'assets/images/hero/AJ140-2.webp',
-    image2: 'assets/images/hero/AJ140-6.webp',
+    image: 'assets/images/products/boite-jonction-aj140-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/boite-jonction-aj140(2)-camera-cctv-dahua-hikvision.png',
     altText: 'Boîte de jonction AJ 140',
-    description: 'Boîte pour caméras dome/bullet, étanche\nPlage de diamètres 30~110 mm\nPlastique traité Utilisable en extérieur/interieur\nDimensions : 70 (H) x 140 (L) x 50 (Pr) mm\n100 PIÈCES / CARTON',
+    description: 'Boîte de jonction grand format, étanche et robuste, adaptée aux installations CCTV nécessitant plus de volume interne.',
     features: [
-      'Tube 2 mm d\'épaisseur',
+      'Grand volume interne',
       '100 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/AJ 140MM 4.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique AJ 140MM.pdf',
     specs: {
       dimensions: '70mm(H)x140mm(L)x50mm(P)',
       poids: '133g',
@@ -45,17 +44,17 @@ const allProducts = [
     id: 3,
     name: 'SJ 110',
     category: 'boites',
-    image: 'assets/images/hero/SJ110-1.webp',
-    image2: 'assets/images/hero/SJ110-3(1).webp',
+    image: 'assets/images/products/boite-jonction-sj110-camera-cctv-dome-bullet-dahua-hikvision.png',
+    image2: 'assets/images/products/boite-jonction-sj110(2)-camera-cctv-dome-bullet-dahua-hikvision.jpg',
     altText: 'Boîte de jonction SJ 110',
-    description: 'Boîte pour caméras dome/bullet, étanche\nPlage de diamètres 28~90 mm\nPlastique traité Utilisable en extérieur/interieur\nDimensions : 50 (H) x 113 (L) x 45 (Pr) mm\n200 PIÈCES / CARTON',
+    description: 'Boîte de jonction compacte et étanche, idéale pour les caméras dôme et bullet sur façades et plafonds.',
     features: [
-      'Tube 2 mm d\'épaisseur',
+      'Format compact',
       '200 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/SJ 110MM 2.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique SJ 110MM.pdf',
     specs: {
-      dimensions: '50mm(H)x113mm(L)x45mm(Pr)',
+      dimensions: '50mm(H)x113mm(L)x45mm(P)',
       poids: '56g',
       matériau: 'Plastique (PP), anti-UV, anti-choc',
       compatibilité: 'Plage de diamètres 28mm à 90mm'
@@ -65,309 +64,330 @@ const allProducts = [
     id: 4,
     name: 'BJ 110 VANDAL',
     category: 'boites',
-    image: 'assets/images/products/placeholder-bj110-vandal.webp',
-    image2: 'assets/images/products/placeholder-bj110-vandal.webp',
+    image: 'assets/images/products/BJ110 VANDAL.png',
+    image2: 'assets/images/products/BJ110 VANDAL+.png',
     altText: 'Boîte de jonction BJ 110 Vandal',
-    description: 'Boîte de jonction anti-vandale BJ 110\nConception renforcée anti-vandale\nPlastique traité Utilisable en extérieur/interieur',
+    description: 'Boîte de jonction renforcée anti-vandale pour zones sensibles et environnements exposés.',
     features: [
       'Conception anti-vandale',
       'Usage extérieur/intérieur'
     ],
-    ficheTechnique: '',
+    ficheTechnique: 'assets/downloads/Fiche Technique BJ110.pdf',
     specs: {
       matériau: 'Plastique (PP), anti-UV, anti-choc, anti-vandale',
       compatibilité: 'Caméras dome anti-vandale'
     }
   },
-  // Supports muraux - Ordre catalogue
-  // WS15: D, E, L
   {
     id: 5,
     name: 'Support mural WS15D',
     category: 'supports',
-    image: 'assets/images/products/support-mural-droit-ws15d-15cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-droit-ws15d-15cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-droit-ws15d-15cm-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-droit-ws15d-15cm-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS15D',
-    description: 'Support mural WS15D - Support droit de 15cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support droit de 15 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '50 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '150 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 6,
     name: 'Support mural WS15E',
     category: 'supports',
-    image: 'assets/images/products/support-mural-angle-externe-ws15e-15cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-angle-externe-ws15e-15cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-angle-externe-ws15e-15cm-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-angle-externe-ws15e-15cm-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS15E',
-    description: 'Support mural WS15E - Support angle externe de 15cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support angle externe de 15 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '50 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '150 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 7,
     name: 'Support mural WS15L',
     category: 'supports',
-    image: 'assets/images/products/support-mural-l-ws15l-15cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-l-ws15l-15cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-l-ws15l-15cm-camera-cctv-dahua-hikvision.jpg',
+    image2: 'assets/images/products/support-mural-l-ws15l-15cm-camera-cctv-dahua-hikvision.jpg',
     altText: 'Support mural WS15L',
-    description: 'Support mural WS15L - Support en L de 15cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support en L de 15 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '50 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '150 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
-  // WS30: D, L, F, E, T, D+T, T90°
   {
     id: 8,
     name: 'Support mural WS30D',
     category: 'supports',
-    image: 'assets/images/products/support-mural-droit-ws30d-30cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-droit-ws30d-30cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-droit-ws30d-30cm-camera-cctv-dahua-hikvision.jpg',
+    image2: 'assets/images/products/support-mural-droit-ws30d-30cm-camera-cctv-dahua-hikvision.jpg',
     altText: 'Support mural WS30D',
-    description: 'Support mural WS30D - Support droit de 30cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support droit de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '36 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 9,
     name: 'Support mural WS30L',
     category: 'supports',
-    image: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.jpg',
+    image2: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.jpg',
     altText: 'Support mural WS30L',
-    description: 'Support mural WS30L - Support en L de 30cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support en L de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '36 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 10,
     name: 'Support mural WS30F',
     category: 'supports',
-    image: 'assets/images/products/support-mural-poteau-ws30f-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-poteau-ws30f-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-poteau-ws30f-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-poteau-ws30f-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS30F',
-    description: 'Support mural WS30F - Support fixation poteau de 30cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support fixation poteau de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '30 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 11,
     name: 'Support mural WS30E',
     category: 'supports',
-    image: 'assets/images/products/support-mural-angle-externe-ws30e-30cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-angle-externe-ws30e-30cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-angle-externe-ws30e-30cm-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-angle-externe-ws30e-30cm-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS30E',
-    description: 'Support mural WS30E - Support angle externe de 30cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support angle externe de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '50 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 12,
     name: 'Support mural WS30T',
     category: 'supports',
-    image: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS30T',
-    description: 'Support mural WS30T - Support télescopique de 30cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support télescopique de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '30 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 13,
     name: 'Support mural WS30D+T',
     category: 'supports',
-    image: 'assets/images/products/support-mural-droit-telescopique-ws30d-plus-t-30cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-droit-telescopique-ws30d-plus-t-30cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-droit-telescopique-ws30d-plus-t-30cm-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-droit-telescopique-ws30d-plus-t-30cm-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS30D+T',
-    description: 'Support mural WS30D+T - Support droit + télescopique de 30cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support droit + télescopique de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '30 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 14,
     name: 'Support mural WS30T90°',
     category: 'supports',
-    image: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS30T90°',
-    description: 'Support mural WS30T90° - Support angle droit de 30cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support angle droit de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '50 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
-  // WS50: D, L, F, E, T, T90°, D+T
   {
     id: 15,
     name: 'Support mural WS50D',
     category: 'supports',
-    image: 'assets/images/products/support-mural-droit-ws50d-50cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-droit-ws50d-50cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-droit-ws50d-50cm-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-droit-ws50d-50cm-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS50D',
-    description: 'Support mural WS50D - Support droit de 50cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support droit de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '25 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 16,
     name: 'Support mural WS50L',
     category: 'supports',
-    image: 'assets/images/products/support-mural-l-ws50l-50cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-l-ws50l-50cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-l-ws50l-50cm-camera-cctv-dahua-hikvision.jpg',
+    image2: 'assets/images/products/support-mural-l-ws50l-50cm-camera-cctv-dahua-hikvision.jpg',
     altText: 'Support mural WS50L',
-    description: 'Support mural WS50L - Support en L de 50cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support en L de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '25 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 17,
     name: 'Support mural WS50F',
     category: 'supports',
-    image: 'assets/images/products/support-mural-poteau-ws50f-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-poteau-ws50f-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-poteau-ws50f-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-poteau-ws50f-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS50F',
-    description: 'Support mural WS50F - Support fixation poteau de 50cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support fixation poteau de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '25 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 18,
     name: 'Support mural WS50E',
     category: 'supports',
-    image: 'assets/images/products/support-mural-angle-externe-ws50e-50cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-angle-externe-ws50e-50cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-angle-externe-ws50e-50cm-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-angle-externe-ws50e-50cm-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS50E',
-    description: 'Support mural WS50E - Support angle externe de 50cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support angle externe de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '20 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 19,
     name: 'Support mural WS50T',
     category: 'supports',
-    image: 'assets/images/products/support-mural-telescopique-ws50t-50cm-installations-pro-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-telescopique-ws50t-50cm-installations-pro-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-telescopique-ws50t-50cm-installations-pro-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-telescopique-ws50t-50cm-installations-pro-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS50T',
-    description: 'Support mural WS50T - Support télescopique de 50cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support télescopique de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '20 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 20,
     name: 'Support mural WS50T90°',
     category: 'supports',
-    image: 'assets/images/products/support-mural-angle-droit-ws50t90deg-50cm-installations-pro-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-angle-droit-ws50t90deg-50cm-installations-pro-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-angle-droit-ws50t90deg-50cm-installations-pro-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-angle-droit-ws50t90deg-50cm-installations-pro-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS50T90°',
-    description: 'Support mural WS50T90° - Support angle droit de 50cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support angle droit de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '20 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 21,
     name: 'Support mural WS50D+T',
     category: 'supports',
-    image: 'assets/images/products/support-mural-droit-telescopique-ws50d-plus-t-50cm-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-droit-telescopique-ws50d-plus-t-50cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-droit-telescopique-ws50d-plus-t-50cm-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-droit-telescopique-ws50d-plus-t-50cm-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS50D+T',
-    description: 'Support mural WS50D+T - Support droit + télescopique de 50cm pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support droit + télescopique de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
       '20 Pièces/carton'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
-  // WS80: D, L
   {
     id: 22,
     name: 'Support mural WS80D',
     category: 'supports',
-    image: 'assets/images/products/support-mural-droit-ws80d-80cm-extra-long-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-droit-ws80d-80cm-extra-long-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-droit-ws80d-80cm-extra-long-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-droit-ws80d-80cm-extra-long-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS80D',
-    description: 'Support mural WS80D - Support droit de 80cm extra long pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support droit de 80 cm pour installation CCTV.',
     features: [
-      'Tube 2 mm d\'épaisseur',
-      '20 Pièces/carton'
+      'Tube 2 mm d\'épaisseur'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '800 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 23,
     name: 'Support mural WS80L',
     category: 'supports',
-    image: 'assets/images/products/support-mural-l-ws80l-80cm-extra-long-camera-cctv-dahua-hikvision.webp',
-    image2: 'assets/images/products/support-mural-l-ws80l-80cm-extra-long-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-l-ws80l-80cm-extra-long-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-l-ws80l-80cm-extra-long-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS80L',
-    description: 'Support mural WS80L - Support en L de 80cm extra long pour caméras de surveillance. Plastique ABS renforcé, étanche, usage intérieur/extérieur.',
+    description: 'Support en L de 80 cm pour installation CCTV.',
     features: [
-      'Tube 2 mm d\'épaisseur',
-      '20 Pièces/carton'
+      'Tube 2 mm d\'épaisseur'
     ],
-    ficheTechnique: 'assets/downloads/WallSupport.pdf',
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '800 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
+  },
+  {
+    id: 24,
+    name: 'Support mural WS100D',
+    category: 'supports',
+    image: 'assets/images/products/support-mural-droit-ws80d-80cm-extra-long-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-droit-ws80d-80cm-extra-long-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS100D',
+    description: 'Support droit de 100 cm pour installation CCTV.',
+    features: [
+      'Tube 2 mm d\'épaisseur'
+    ],
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
+    specs: { longueur: '1000 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
+  },
+  {
+    id: 25,
+    name: 'Support mural WS100L',
+    category: 'supports',
+    image: 'assets/images/products/support-mural-l-ws80l-80cm-extra-long-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/support-mural-l-ws80l-80cm-extra-long-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS100L',
+    description: 'Support en L de 100 cm pour installation CCTV.',
+    features: [
+      'Tube 2 mm d\'épaisseur'
+    ],
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
+    specs: { longueur: '1000 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   }
 ];
 
@@ -376,8 +396,8 @@ const categories = [
   {
     id: 'boites',
     name: 'Boîtes de Jonction',
-    description: 'Découvrez notre gamme de boîtes de jonction étanches pour vos installations extérieures.',
-    image: 'assets/images/products/boite-jonction-aj120-camera-cctv-dahua-hikvision.webp',
+    description: 'Gamme de boîtes de jonction étanches et robustes pour protéger les connexions CCTV en intérieur comme en extérieur.',
+    image: 'assets/images/products/boite-jonction-aj120-camera-cctv-dahua-hikvision.jpg',
     count: allProducts.filter(p => p.category === 'boites').length,
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
@@ -389,7 +409,7 @@ const categories = [
     id: 'supports',
     name: 'Supports Muraux',
     description: 'Un accessoire indispensable pour l\'installation de caméras de surveillance. Conçu avec un plastique ABS de haute résistance, il allie robustesse, légèreté et durabilité pour un usage intérieur et extérieur.',
-    image: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.webp',
+    image: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.png',
     count: allProducts.filter(p => p.category === 'supports').length,
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
