@@ -25,8 +25,7 @@ function initProductDetail() {
 }
 
 function loadProduct(categoryId, productId) {
-    // Utiliser les données du fichier main.js ou products.js
-    const allProducts = window.PlastoblastApp?.products || window.ProductsApp?.allProducts || [];
+    const allProducts = window.ProductsApp?.allProducts || window.PlastoblastApp?.products || [];
     
     const product = allProducts.find(p => p.id === productId && p.category === categoryId);
     
@@ -74,8 +73,8 @@ function displayProduct(product) {
         featuresList.appendChild(li);
     });
     
-    // Spécifications techniques
     displaySpecs(product.specs);
+    updateCompatibilitySection(product);
     
     // Bouton WhatsApp
     const whatsappBtn = document.getElementById('whatsappBtn');
@@ -91,7 +90,12 @@ Pourriez-vous me fournir :
 
 Merci de me recontacter rapidement.`;
     
-    whatsappBtn.href = `https://wa.me/213560006906?text=${encodeURIComponent(message)}`;
+    whatsappBtn.href = `https://wa.me/213559371692?text=${encodeURIComponent(message)}`;
+    
+    const contactBtn = document.getElementById('contactBtn');
+    if (contactBtn) {
+        contactBtn.href = `mailto:djemoi.mahdi.salim@plastoblast-dz.com?subject=${encodeURIComponent(`Demande d'information - ${product.name}`)}`;
+    }
     
     // Mettre à jour le titre de la page
     document.title = `${product.name} - Plastoblast | Accessoires CCTV Professionnels`;
@@ -128,7 +132,11 @@ function formatSpecLabel(key) {
         'matériau': 'Matériau',
         'compatibilité': 'Compatibilité',
         'longueur': 'Longueur',
-        'couleur': 'Couleur'
+        'couleur': 'Couleur',
+        'fixation': 'Plage de fixation',
+        'diamètre': 'Diamètre',
+        'conditionnement': 'Conditionnement',
+        'usage': 'Usage'
     };
     return labels[key] || key.charAt(0).toUpperCase() + key.slice(1);
 }
@@ -136,13 +144,42 @@ function formatSpecLabel(key) {
 function getCategoryName(categoryId) {
     const categories = {
         'boites': 'Boîtes de Jonction',
-        'supports': 'Supports Muraux'
+        'supports': 'Supports Muraux',
+        'iro': 'Tubes IRO'
     };
     return categories[categoryId] || categoryId;
 }
 
+function updateCompatibilitySection(product) {
+    const compatibilityTitle = document.querySelector('.compatibility-section .section-title');
+    const compatibilityItems = document.querySelectorAll('.compatibility-item');
+
+    if (!compatibilityTitle || compatibilityItems.length < 3) {
+        return;
+    }
+
+    if (product.category === 'iro') {
+        compatibilityTitle.textContent = 'Applications recommandées';
+        compatibilityItems[0].querySelector('h4').textContent = 'Cheminement des câbles';
+        compatibilityItems[0].querySelector('p').textContent = 'Conçu pour le passage propre et durable des réseaux électriques et de sécurité.';
+        compatibilityItems[1].querySelector('h4').textContent = 'Accessoires assortis';
+        compatibilityItems[1].querySelector('p').textContent = 'Compatible avec les tés, coudes et connecteurs de la gamme IRO Plastoblast.';
+        compatibilityItems[2].querySelector('h4').textContent = 'Installation';
+        compatibilityItems[2].querySelector('p').textContent = 'Pose rapide pour les chantiers résidentiels, tertiaires et techniques.';
+        return;
+    }
+
+    compatibilityTitle.textContent = 'Compatibilité & Installation';
+    compatibilityItems[0].querySelector('h4').textContent = 'Marques compatibles';
+    compatibilityItems[0].querySelector('p').textContent = 'Dahua, Hikvision, Uniview et autres marques CCTV standards.';
+    compatibilityItems[1].querySelector('h4').textContent = 'Types de caméras';
+    compatibilityItems[1].querySelector('p').textContent = 'Caméras dôme, bullet, PTZ et équipements IP selon le modèle.';
+    compatibilityItems[2].querySelector('h4').textContent = 'Installation';
+    compatibilityItems[2].querySelector('p').textContent = 'Montage simple et rapide pour les intégrateurs et installateurs professionnels.';
+}
+
 function loadRelatedProducts(categoryId, currentProductId) {
-    const allProducts = window.PlastoblastApp?.products || window.ProductsApp?.allProducts || [];
+    const allProducts = window.ProductsApp?.allProducts || window.PlastoblastApp?.products || [];
     
     // Filtrer les produits de la même catégorie (exclure le produit actuel)
     const relatedProducts = allProducts

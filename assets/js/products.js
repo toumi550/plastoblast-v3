@@ -1,344 +1,346 @@
-// Données complètes des produits
 const allProducts = [
   {
     id: 1,
-    name: 'AJ 120',
+    name: 'AJ120',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-aj120-camera-cctv-dahua-hikvision.jpg',
-    image2: 'assets/images/products/boite-jonction-aj120(2)-camera-cctv-dahua-hikvision.jpg',
-    altText: 'Boîte de jonction AJ 120',
-    description: 'Boîte de jonction étanche pour caméras dome et bullet, conçue pour une installation propre en intérieur comme en extérieur.',
+    altText: 'Boîte de jonction AJ120',
+    description: 'Boîte pour caméras dôme / bullet, étanche.',
     features: [
-      'Étanche intérieur/extérieur',
-      '150 Pièces/carton'
+      'Boîte pour caméras dôme / bullet, étanche',
+      'Plage de diamètres : 25–90 mm',
+      '150 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique  AJ 120MM.pdf',
     specs: {
-      dimensions: '40mm(H)x125mm(L)x45mm(P)',
-      poids: '101g',
+      dimensions: '40 x 125 x 45 mm',
+      poids: '101 g',
       matériau: 'Plastique (PP), anti-UV, anti-choc',
-      compatibilité: 'Plage de diamètres 25mm à 90mm'
+      compatibilité: 'Plage de diamètres 25–90 mm'
     }
   },
   {
     id: 2,
-    name: 'AJ 140',
+    name: 'AJ140',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-aj140-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/boite-jonction-aj140(2)-camera-cctv-dahua-hikvision.png',
-    altText: 'Boîte de jonction AJ 140',
-    description: 'Boîte de jonction grand format, étanche et robuste, adaptée aux installations CCTV nécessitant plus de volume interne.',
+    altText: 'Boîte de jonction AJ140',
+    description: 'Boîte pour caméras dôme / bullet, étanche.',
     features: [
-      'Grand volume interne',
-      '100 Pièces/carton'
+      'Boîte pour caméras dôme / bullet, étanche',
+      'Plage de diamètres : 30–110 mm',
+      '100 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique AJ 140MM.pdf',
     specs: {
-      dimensions: '70mm(H)x140mm(L)x50mm(P)',
-      poids: '133g',
+      dimensions: '70 x 140 x 50 mm',
+      poids: '133 g',
       matériau: 'Plastique (PP), anti-UV, anti-choc',
-      compatibilité: 'Plage de diamètres 30mm à 110mm'
+      compatibilité: 'Plage de diamètres 30–110 mm'
     }
   },
   {
     id: 3,
-    name: 'SJ 110',
+    name: 'SJ110',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-sj110-camera-cctv-dome-bullet-dahua-hikvision.png',
-    image2: 'assets/images/products/boite-jonction-sj110(2)-camera-cctv-dome-bullet-dahua-hikvision.jpg',
-    altText: 'Boîte de jonction SJ 110',
-    description: 'Boîte de jonction compacte et étanche, idéale pour les caméras dôme et bullet sur façades et plafonds.',
+    altText: 'Boîte de jonction SJ110',
+    description: 'Boîte pour caméras dôme / bullet, étanche.',
     features: [
-      'Format compact',
-      '200 Pièces/carton'
+      'Boîte pour caméras dôme / bullet, étanche',
+      'Plage de diamètres : 28–90 mm',
+      '200 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique SJ 110MM.pdf',
     specs: {
-      dimensions: '50mm(H)x113mm(L)x45mm(P)',
-      poids: '56g',
+      dimensions: '50 x 113 x 45 mm',
+      poids: '56 g',
       matériau: 'Plastique (PP), anti-UV, anti-choc',
-      compatibilité: 'Plage de diamètres 28mm à 90mm'
+      compatibilité: 'Plage de diamètres 28–90 mm'
     }
   },
   {
     id: 4,
-    name: 'BJ 110 VANDAL',
+    name: 'BJ110 VANDAL',
     category: 'boites',
     image: 'assets/images/products/BJ110 VANDAL.png',
-    image2: 'assets/images/products/BJ110 VANDAL+.png',
-    altText: 'Boîte de jonction BJ 110 Vandal',
-    description: 'Boîte de jonction renforcée anti-vandale pour zones sensibles et environnements exposés.',
+    altText: 'Boîte de jonction BJ110 VANDAL',
+    description: 'Boîte pour caméras dôme / bullet, étanche.',
     features: [
-      'Conception anti-vandale',
-      'Usage extérieur/intérieur'
+      'Boîte pour caméras dôme / bullet, étanche',
+      'Plage de fixation : 45–110 mm',
+      '50 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique BJ110.pdf',
     specs: {
-      matériau: 'Plastique (PP), anti-UV, anti-choc, anti-vandale',
-      compatibilité: 'Caméras dome anti-vandale'
+      matériau: 'Plastique (PP), anti-UV, anti-choc',
+      fixation: '45–110 mm',
+      usage: 'Intérieur / extérieur'
     }
   },
   {
     id: 5,
-    name: 'Support mural WS15D',
+    name: 'BJ110 VANDAL +',
+    category: 'boites',
+    image: 'assets/images/products/BJ110 VANDAL +.png',
+    altText: 'Boîte de jonction BJ110 VANDAL +',
+    description: 'Boîte pour caméras dôme / bullet, étanche avec presse étoupe PG9.',
+    features: [
+      'Boîte pour caméras dôme / bullet, étanche',
+      'Plage de fixation : 45–110 mm',
+      'Avec presse étoupe PG9',
+      '40 pièces / carton'
+    ],
+    ficheTechnique: 'assets/downloads/Fiche Technique BJ110.pdf',
+    specs: {
+      matériau: 'Plastique (PP), anti-UV, anti-choc',
+      fixation: '45–110 mm',
+      usage: 'Intérieur / extérieur'
+    }
+  },
+  {
+    id: 6,
+    name: 'WS15D',
     category: 'supports',
     image: 'assets/images/products/support-mural-droit-ws15d-15cm-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-droit-ws15d-15cm-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS15D',
     description: 'Support droit de 15 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '50 Pièces/carton'
-    ],
-    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
-    specs: { longueur: '150 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
-  },
-  {
-    id: 6,
-    name: 'Support mural WS15E',
-    category: 'supports',
-    image: 'assets/images/products/support-mural-angle-externe-ws15e-15cm-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-angle-externe-ws15e-15cm-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS15E',
-    description: 'Support angle externe de 15 cm pour installation CCTV.',
-    features: [
-      'Tube 2 mm d\'épaisseur',
-      '50 Pièces/carton'
+      '50 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '150 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 7,
-    name: 'Support mural WS15L',
+    name: 'WS15E',
     category: 'supports',
-    image: 'assets/images/products/support-mural-l-ws15l-15cm-camera-cctv-dahua-hikvision.jpg',
-    image2: 'assets/images/products/support-mural-l-ws15l-15cm-camera-cctv-dahua-hikvision.jpg',
-    altText: 'Support mural WS15L',
-    description: 'Support en L de 15 cm pour installation CCTV.',
+    image: 'assets/images/products/support-mural-angle-externe-ws15e-15cm-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS15E',
+    description: 'Support angle externe de 15 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '50 Pièces/carton'
+      '50 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '150 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 8,
-    name: 'Support mural WS30D',
+    name: 'WS15L',
+    category: 'supports',
+    image: 'assets/images/products/support-mural-l-ws15l-15cm-camera-cctv-dahua-hikvision.jpg',
+    altText: 'Support mural WS15L',
+    description: 'Support en L de 15 cm pour installation CCTV.',
+    features: [
+      'Tube 2 mm d\'épaisseur',
+      '50 pièces / carton'
+    ],
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
+    specs: { longueur: '150 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
+  },
+  {
+    id: 9,
+    name: 'WS30D',
     category: 'supports',
     image: 'assets/images/products/support-mural-droit-ws30d-30cm-camera-cctv-dahua-hikvision.jpg',
-    image2: 'assets/images/products/support-mural-droit-ws30d-30cm-camera-cctv-dahua-hikvision.jpg',
     altText: 'Support mural WS30D',
     description: 'Support droit de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '36 Pièces/carton'
-    ],
-    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
-    specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
-  },
-  {
-    id: 9,
-    name: 'Support mural WS30L',
-    category: 'supports',
-    image: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.jpg',
-    image2: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.jpg',
-    altText: 'Support mural WS30L',
-    description: 'Support en L de 30 cm pour installation CCTV.',
-    features: [
-      'Tube 2 mm d\'épaisseur',
-      '36 Pièces/carton'
+      '36 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 10,
-    name: 'Support mural WS30F',
+    name: 'WS30L',
     category: 'supports',
-    image: 'assets/images/products/support-mural-poteau-ws30f-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-poteau-ws30f-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS30F',
-    description: 'Support fixation poteau de 30 cm pour installation CCTV.',
+    image: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.jpg',
+    altText: 'Support mural WS30L',
+    description: 'Support en L de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '30 Pièces/carton'
+      '36 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 11,
-    name: 'Support mural WS30E',
+    name: 'WS30F',
     category: 'supports',
-    image: 'assets/images/products/support-mural-angle-externe-ws30e-30cm-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-angle-externe-ws30e-30cm-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS30E',
-    description: 'Support angle externe de 30 cm pour installation CCTV.',
+    image: 'assets/images/products/support-mural-poteau-ws30f-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS30F',
+    description: 'Support fixation poteau de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '50 Pièces/carton'
+      '30 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 12,
-    name: 'Support mural WS30T',
+    name: 'WS30E',
     category: 'supports',
-    image: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS30T',
-    description: 'Support télescopique de 30 cm pour installation CCTV.',
+    image: 'assets/images/products/support-mural-angle-externe-ws30e-30cm-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS30E',
+    description: 'Support angle externe de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '30 Pièces/carton'
+      '50 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 13,
-    name: 'Support mural WS30D+T',
+    name: 'WS30T',
     category: 'supports',
-    image: 'assets/images/products/support-mural-droit-telescopique-ws30d-plus-t-30cm-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-droit-telescopique-ws30d-plus-t-30cm-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS30D+T',
-    description: 'Support droit + télescopique de 30 cm pour installation CCTV.',
+    image: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS30T',
+    description: 'Support télescopique de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '30 Pièces/carton'
+      '30 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 14,
-    name: 'Support mural WS30T90°',
+    name: 'WS30D+T',
     category: 'supports',
-    image: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS30T90°',
-    description: 'Support angle droit de 30 cm pour installation CCTV.',
+    image: 'assets/images/products/support-mural-droit-telescopique-ws30d-plus-t-30cm-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS30D+T',
+    description: 'Support droit + télescopique de 30 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '50 Pièces/carton'
+      '30 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 15,
-    name: 'Support mural WS50D',
+    name: 'WS30T90°',
+    category: 'supports',
+    image: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS30T90°',
+    description: 'Support angle droit de 30 cm pour installation CCTV.',
+    features: [
+      'Tube 2 mm d\'épaisseur',
+      '50 pièces / carton'
+    ],
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
+    specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
+  },
+  {
+    id: 16,
+    name: 'WS50D',
     category: 'supports',
     image: 'assets/images/products/support-mural-droit-ws50d-50cm-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-droit-ws50d-50cm-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS50D',
     description: 'Support droit de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '25 Pièces/carton'
-    ],
-    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
-    specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
-  },
-  {
-    id: 16,
-    name: 'Support mural WS50L',
-    category: 'supports',
-    image: 'assets/images/products/support-mural-l-ws50l-50cm-camera-cctv-dahua-hikvision.jpg',
-    image2: 'assets/images/products/support-mural-l-ws50l-50cm-camera-cctv-dahua-hikvision.jpg',
-    altText: 'Support mural WS50L',
-    description: 'Support en L de 50 cm pour installation CCTV.',
-    features: [
-      'Tube 2 mm d\'épaisseur',
-      '25 Pièces/carton'
+      '25 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 17,
-    name: 'Support mural WS50F',
+    name: 'WS50L',
     category: 'supports',
-    image: 'assets/images/products/support-mural-poteau-ws50f-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-poteau-ws50f-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS50F',
-    description: 'Support fixation poteau de 50 cm pour installation CCTV.',
+    image: 'assets/images/products/support-mural-l-ws50l-50cm-camera-cctv-dahua-hikvision.jpg',
+    altText: 'Support mural WS50L',
+    description: 'Support en L de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '25 Pièces/carton'
+      '25 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 18,
-    name: 'Support mural WS50E',
+    name: 'WS50F',
     category: 'supports',
-    image: 'assets/images/products/support-mural-angle-externe-ws50e-50cm-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-angle-externe-ws50e-50cm-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS50E',
-    description: 'Support angle externe de 50 cm pour installation CCTV.',
+    image: 'assets/images/products/support-mural-poteau-ws50f-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS50F',
+    description: 'Support fixation poteau de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '20 Pièces/carton'
+      '25 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 19,
-    name: 'Support mural WS50T',
+    name: 'WS50E',
     category: 'supports',
-    image: 'assets/images/products/support-mural-telescopique-ws50t-50cm-installations-pro-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-telescopique-ws50t-50cm-installations-pro-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS50T',
-    description: 'Support télescopique de 50 cm pour installation CCTV.',
+    image: 'assets/images/products/support-mural-angle-externe-ws50e-50cm-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS50E',
+    description: 'Support angle externe de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '20 Pièces/carton'
+      '20 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 20,
-    name: 'Support mural WS50T90°',
+    name: 'WS50T',
     category: 'supports',
-    image: 'assets/images/products/support-mural-angle-droit-ws50t90deg-50cm-installations-pro-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-angle-droit-ws50t90deg-50cm-installations-pro-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS50T90°',
-    description: 'Support angle droit de 50 cm pour installation CCTV.',
+    image: 'assets/images/products/support-mural-telescopique-ws50t-50cm-installations-pro-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS50T',
+    description: 'Support télescopique de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '20 Pièces/carton'
+      '20 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 21,
-    name: 'Support mural WS50D+T',
+    name: 'WS50T90°',
     category: 'supports',
-    image: 'assets/images/products/support-mural-droit-telescopique-ws50d-plus-t-50cm-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-droit-telescopique-ws50d-plus-t-50cm-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS50D+T',
-    description: 'Support droit + télescopique de 50 cm pour installation CCTV.',
+    image: 'assets/images/products/support-mural-angle-droit-ws50t90deg-50cm-installations-pro-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS50T90°',
+    description: 'Support angle droit de 50 cm pour installation CCTV.',
     features: [
       'Tube 2 mm d\'épaisseur',
-      '20 Pièces/carton'
+      '20 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
     id: 22,
-    name: 'Support mural WS80D',
+    name: 'WS50D+T',
+    category: 'supports',
+    image: 'assets/images/products/support-mural-droit-telescopique-ws50d-plus-t-50cm-camera-cctv-dahua-hikvision.png',
+    altText: 'Support mural WS50D+T',
+    description: 'Support droit + télescopique de 50 cm pour installation CCTV.',
+    features: [
+      'Tube 2 mm d\'épaisseur',
+      '20 pièces / carton'
+    ],
+    ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
+    specs: { longueur: '500 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
+  },
+  {
+    id: 23,
+    name: 'WS80D',
     category: 'supports',
     image: 'assets/images/products/support-mural-droit-ws80d-80cm-extra-long-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-droit-ws80d-80cm-extra-long-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS80D',
     description: 'Support droit de 80 cm pour installation CCTV.',
     features: [
@@ -348,11 +350,10 @@ const allProducts = [
     specs: { longueur: '800 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
-    id: 23,
-    name: 'Support mural WS80L',
+    id: 24,
+    name: 'WS80L',
     category: 'supports',
     image: 'assets/images/products/support-mural-l-ws80l-80cm-extra-long-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-l-ws80l-80cm-extra-long-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS80L',
     description: 'Support en L de 80 cm pour installation CCTV.',
     features: [
@@ -362,11 +363,10 @@ const allProducts = [
     specs: { longueur: '800 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
-    id: 24,
-    name: 'Support mural WS100D',
+    id: 25,
+    name: 'WS100D',
     category: 'supports',
     image: 'assets/images/products/support-mural-droit-ws80d-80cm-extra-long-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-droit-ws80d-80cm-extra-long-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS100D',
     description: 'Support droit de 100 cm pour installation CCTV.',
     features: [
@@ -376,11 +376,10 @@ const allProducts = [
     specs: { longueur: '1000 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
   },
   {
-    id: 25,
-    name: 'Support mural WS100L',
+    id: 26,
+    name: 'WS100L',
     category: 'supports',
     image: 'assets/images/products/support-mural-l-ws80l-80cm-extra-long-camera-cctv-dahua-hikvision.png',
-    image2: 'assets/images/products/support-mural-l-ws80l-80cm-extra-long-camera-cctv-dahua-hikvision.png',
     altText: 'Support mural WS100L',
     description: 'Support en L de 100 cm pour installation CCTV.',
     features: [
@@ -388,6 +387,100 @@ const allProducts = [
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique wall support.pdf',
     specs: { longueur: '1000 mm', matériau: 'Plastique ABS renforcé', couleur: 'Blanc' }
+  },
+  {
+    id: 27,
+    name: 'TUBES IRO 16 MM',
+    category: 'iro',
+    image: 'assets/images/products/tube iro.jfif',
+    altText: 'Tube IRO 16 mm',
+    description: 'Tube IRO 16 mm en barre de 3 m.',
+    features: [
+      'Barre de 3 m',
+      '10 barres par fardeau'
+    ],
+    ficheTechnique: 'assets/downloads/IRO fiche tchenique.pdf',
+    specs: { diamètre: '16 mm', longueur: '3 m', conditionnement: '10 barres / fardeau' }
+  },
+  {
+    id: 28,
+    name: 'TUBES IRO 20 MM',
+    category: 'iro',
+    image: 'assets/images/products/tube iro.jfif',
+    altText: 'Tube IRO 20 mm',
+    description: 'Tube IRO 20 mm en barre de 3 m.',
+    features: [
+      'Barre de 3 m',
+      '10 barres par fardeau'
+    ],
+    ficheTechnique: 'assets/downloads/IRO fiche tchenique.pdf',
+    specs: { diamètre: '20 mm', longueur: '3 m', conditionnement: '10 barres / fardeau' }
+  },
+  {
+    id: 29,
+    name: 'TUBES IRO 25 MM',
+    category: 'iro',
+    image: 'assets/images/products/tube iro.jfif',
+    altText: 'Tube IRO 25 mm',
+    description: 'Tube IRO 25 mm en barre de 3 m.',
+    features: [
+      'Barre de 3 m',
+      '10 barres par fardeau'
+    ],
+    ficheTechnique: 'assets/downloads/IRO fiche tchenique.pdf',
+    specs: { diamètre: '25 mm', longueur: '3 m', conditionnement: '10 barres / fardeau' }
+  },
+  {
+    id: 30,
+    name: 'TÉ IRO',
+    category: 'iro',
+    image: 'assets/images/products/Té.jfif',
+    altText: 'Té IRO',
+    description: 'Té disponible en diamètre 16, 20 et 25 mm.',
+    features: [
+      'Té disponible en diamètre 16, 20, 25 mm'
+    ],
+    ficheTechnique: 'assets/downloads/IRO fiche tchenique.pdf',
+    specs: { diamètre: '16 / 20 / 25 mm', usage: 'Raccordement en T' }
+  },
+  {
+    id: 31,
+    name: 'COUDE 45°',
+    category: 'iro',
+    image: 'assets/images/products/coude-equerre-90-deg-pour-tube-iro-de-16.jpg',
+    altText: 'Coude 45° IRO',
+    description: 'Coude 45° disponible en diamètre 16, 20 et 25 mm.',
+    features: [
+      'Coude 45° disponible en diamètre 16, 20, 25 mm'
+    ],
+    ficheTechnique: 'assets/downloads/IRO fiche tchenique.pdf',
+    specs: { diamètre: '16 / 20 / 25 mm', usage: 'Déviation à 45°' }
+  },
+  {
+    id: 32,
+    name: 'COUDE À ANGLE DOUX',
+    category: 'iro',
+    image: 'assets/images/products/Coude a angle doux .webp',
+    altText: 'Coude à angle doux IRO',
+    description: 'Coude à angle doux disponible en diamètre 16, 20 et 25 mm.',
+    features: [
+      'Coude à angle doux disponible en 16, 20, 25 mm'
+    ],
+    ficheTechnique: 'assets/downloads/IRO fiche tchenique.pdf',
+    specs: { diamètre: '16 / 20 / 25 mm', usage: 'Courbure douce' }
+  },
+  {
+    id: 33,
+    name: 'CONNECTEURS IRO',
+    category: 'iro',
+    image: 'assets/images/products/connecteurs.jpg',
+    altText: 'Connecteurs IRO',
+    description: 'Connecteurs disponibles en diamètre 16, 20 et 25 mm.',
+    features: [
+      'Connecteurs disponibles en diamètre 16, 20, 25 mm'
+    ],
+    ficheTechnique: 'assets/downloads/IRO fiche tchenique.pdf',
+    specs: { diamètre: '16 / 20 / 25 mm', usage: 'Raccordement droit' }
   }
 ];
 
@@ -415,6 +508,18 @@ const categories = [
       <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
       <line x1="9" y1="9" x2="15" y2="15"/>
       <line x1="15" y1="9" x2="9" y2="15"/>
+    </svg>`
+  },
+  {
+    id: 'iro',
+    name: 'TUBES IRO',
+    description: 'Tubes IRO et accessoires de raccordement pour le cheminement propre et durable des installations électriques.',
+    image: 'assets/images/products/tube iro.jfif',
+    count: allProducts.filter(p => p.category === 'iro').length,
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M4 7h10a3 3 0 0 1 0 6H6a3 3 0 0 0 0 6h14"/>
+      <circle cx="18" cy="7" r="2"/>
+      <circle cx="6" cy="19" r="2"/>
     </svg>`
   }
 ];
@@ -597,66 +702,98 @@ function createProductCard(product, index) {
   card.setAttribute('data-category', product.category);
   card.style.animationDelay = `${index * 0.1}s`;
   
-  // Générer un ID unique pour cette description
-  const descriptionId = `desc-${product.id}-${index}`;
-  
   card.innerHTML = `
     <div class="product-header-green">
       <h3 class="product-name-header">${product.name}</h3>
     </div>
     <div class="product-body-mockup">
       <div class="product-image-section">
-        <div class="product-carousel" id="carousel-${product.id}-${index}">
-          <div class="carousel-images">
-            <img
-              src="${product.image}"
-              alt="${product.altText || product.name} - Image 1"
-              class="product-image active"
-              loading="lazy"
-              onerror="this.src='/assets/images/placeholder-product.jpg'"
-            >
-            <img
-              src="${product.image2 || product.image}"
-              alt="${product.altText || product.name} - Image 2"
-              class="product-image"
-              loading="lazy"
-              onerror="this.src='/assets/images/placeholder-product.jpg'"
-            >
-          </div>
-          <button class="carousel-btn carousel-prev" onclick="changeCarouselImage('carousel-${product.id}-${index}', -1)" aria-label="Image précédente">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          <button class="carousel-btn carousel-next" onclick="changeCarouselImage('carousel-${product.id}-${index}', 1)" aria-label="Image suivante">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
-          <div class="carousel-indicators">
-            <span class="indicator active" onclick="goToCarouselImage('carousel-${product.id}-${index}', 0)"></span>
-            <span class="indicator" onclick="goToCarouselImage('carousel-${product.id}-${index}', 1)"></span>
-          </div>
-        </div>
+        <button type="button" class="product-image-button" aria-label="Agrandir l'image de ${product.name}">
+          <img
+            src="${product.image}"
+            alt="${product.altText || product.name}"
+            class="product-image active"
+            loading="lazy"
+            onerror="this.src='/assets/images/placeholder-product.jpg'"
+          >
+          <span class="product-image-zoom-label">Agrandir</span>
+        </button>
       </div>
     </div>
     <div class="product-description-bottom">
-      ${product.features.slice(-2).join('<br>')}
+      ${product.features.join('<br>')}
     </div>
-    ${product.ficheTechnique ? `
-    <a href="${product.ficheTechnique}" class="product-fiche-btn" target="_blank" rel="noopener noreferrer">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-        <polyline points="14,2 14,8 20,8"/>
-        <line x1="16" y1="13" x2="8" y2="13"/>
-        <line x1="16" y1="17" x2="8" y2="17"/>
-      </svg>
-      Fiche technique
-    </a>
-    ` : ''}
+    <div class="product-actions-row">
+      <a href="product-detail.html?category=${product.category}&id=${product.id}" class="product-secondary-btn">
+        Voir le détail
+      </a>
+      ${product.ficheTechnique ? `
+      <a href="${product.ficheTechnique}" class="product-fiche-btn" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14,2 14,8 20,8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+        Fiche technique
+      </a>
+      ` : ''}
+    </div>
   `;
+
+  const imageButton = card.querySelector('.product-image-button');
+  if (imageButton) {
+    imageButton.addEventListener('click', () => openProductImageModal(product.image, product.altText || product.name));
+  }
   
   return card;
+}
+
+let productImageModal = null;
+
+function ensureProductImageModal() {
+  if (productImageModal) {
+    return productImageModal;
+  }
+
+  productImageModal = document.createElement('div');
+  productImageModal.className = 'product-image-modal';
+  productImageModal.innerHTML = `
+    <div class="product-image-modal-backdrop"></div>
+    <div class="product-image-modal-content">
+      <button type="button" class="product-image-modal-close" aria-label="Fermer l'image">
+        ×
+      </button>
+      <img class="product-image-modal-image" src="" alt="">
+    </div>
+  `;
+
+  document.body.appendChild(productImageModal);
+
+  const closeModal = () => {
+    productImageModal.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  productImageModal.querySelector('.product-image-modal-backdrop').addEventListener('click', closeModal);
+  productImageModal.querySelector('.product-image-modal-close').addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && productImageModal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  return productImageModal;
+}
+
+function openProductImageModal(src, alt) {
+  const modal = ensureProductImageModal();
+  const modalImage = modal.querySelector('.product-image-modal-image');
+  modalImage.src = src;
+  modalImage.alt = alt;
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
 }
 
 function handleSearch(e) {
@@ -665,24 +802,7 @@ function handleSearch(e) {
 }
 
 function viewProductDetails(category, productId) {
-  // Rediriger vers la page de détail du produit
   window.location.href = `product-detail.html?category=${category}&id=${productId}`;
-}
-
-// Fonction pour basculer l'affichage de la description
-function toggleDescription(descriptionId) {
-  const description = document.getElementById(descriptionId);
-  const toggle = description.nextElementSibling;
-  
-  if (description.classList.contains('truncated')) {
-    description.classList.remove('truncated');
-    description.classList.add('expanded');
-    toggle.textContent = 'Voir moins';
-  } else {
-    description.classList.remove('expanded');
-    description.classList.add('truncated');
-    toggle.textContent = 'Voir plus';
-  }
 }
 
 // Initialiser le scroll reveal pour les nouveaux éléments
@@ -738,17 +858,7 @@ function changeCarouselImage(carouselId, direction) {
 }
 
 function goToCarouselImage(carouselId, index) {
-  const carousel = document.getElementById(carouselId);
-  if (!carousel) return;
-  
-  const images = carousel.querySelectorAll('.product-image');
-  const indicators = carousel.querySelectorAll('.indicator');
-  
-  images.forEach(img => img.classList.remove('active'));
-  indicators.forEach(ind => ind.classList.remove('active'));
-  
-  images[index].classList.add('active');
-  indicators[index].classList.add('active');
+  return { carouselId, index };
 }
 
 // Export pour utilisation globale
