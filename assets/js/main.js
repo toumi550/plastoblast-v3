@@ -2,83 +2,73 @@
 const products = [
   {
     id: 1,
-    name: 'CBOX-AJ120',
+    name: 'AJ120',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-aj120-camera-cctv-dahua-hikvision.jpg',
-    altText: 'Boîte de jonction CBOX-AJ120',
-    description: 'Boîte de jonction hautement résistante et étanche pour caméras dôme ou bullet.',
-    features: ['Compatibilité quasi universelle', 'Haute résistance', 'Étanche', 'Plastique PP anti-UV'],
-    specs: { dimensions: '40×125×45mm', poids: '101g', matériau: 'Plastique PP anti-UV' }
+    altText: 'Boîte de jonction AJ120',
+    description: 'Boîte pour caméras dôme / bullet, étanche.',
+    features: ['Plage de diamètres : 25–90 mm', '150 pièces / carton'],
+    specs: { dimensions: '40×125×45 mm', poids: '101 g', matériau: 'Plastique PP anti-UV' }
   },
   {
     id: 2,
-    name: 'AJ-140',
+    name: 'AJ140',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-aj140-camera-cctv-dahua-hikvision.png',
-    altText: 'Boîte de jonction AJ-140',
-    description: 'Boîte de jonction grand format pour caméras dôme ou IP/PoE.',
-    features: ['Compatibilité universelle', 'Haute résistance', 'Étanche'],
-    specs: { dimensions: '70×140×50mm', poids: '133g' }
+    altText: 'Boîte de jonction AJ140',
+    description: 'Boîte pour caméras dôme / bullet, étanche.',
+    features: ['Plage de diamètres : 30–110 mm', '100 pièces / carton'],
+    specs: { dimensions: '70×140×50 mm', poids: '133 g' }
   },
   {
     id: 3,
-    name: 'SJ-110',
+    name: 'SJ110',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-sj110-camera-cctv-dome-bullet-dahua-hikvision.png',
-    altText: 'Boîte de jonction SJ-110',
-    description: 'Boîte de jonction compacte pour caméras dôme ou Bullet.',
-    features: ['Compatibilité universelle', 'Haute résistance', 'Étanche'],
-    specs: { dimensions: '50×113×45mm', poids: '56g' }
+    altText: 'Boîte de jonction SJ110',
+    description: 'Boîte pour caméras dôme / bullet, étanche.',
+    features: ['Plage de diamètres : 28–90 mm', '200 pièces / carton'],
+    specs: { dimensions: '50×113×45 mm', poids: '56 g' }
   },
   {
     id: 4,
-    name: 'WS15-D',
-    category: 'supports',
-    image: 'assets/images/products/support-mural-droit-ws15d-15cm-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS15-D',
-    description: 'Support mural droit de 15cm pour caméras de surveillance.',
-    features: ['Longueur 15cm', 'Alliage résistant', 'Étanche'],
-    specs: { longueur: '150mm', matériau: 'Plastique ABS renforcé' }
+    name: 'BJ110 VANDAL',
+    category: 'boites',
+    image: 'assets/images/products/BJ110 VANDAL.png',
+    altText: 'Boîte de jonction BJ110 VANDAL',
+    description: 'Boîte pour caméras dôme / bullet, étanche.',
+    features: ['Plage de fixation : 45–110 mm', '50 pièces / carton'],
+    specs: { matériau: 'Plastique PP anti-UV', fixation: '45–110 mm' }
   },
   {
     id: 5,
-    name: 'WS30-L',
-    category: 'supports',
-    image: 'assets/images/products/support-mural-l-ws30l-30cm-camera-cctv-dahua-hikvision.jpg',
-    altText: 'Support mural WS30-L',
-    description: 'Support mural en L de 30cm pour installation flexible.',
-    features: ['Forme en L', 'Longueur 30cm', 'Grande stabilité'],
-    specs: { longueur: '300mm', matériau: 'Plastique ABS renforcé' }
+    name: 'BJ110 VANDAL +',
+    category: 'boites',
+    image: 'assets/images/products/BJ110 VANDAL +.png',
+    altText: 'Boîte de jonction BJ110 VANDAL +',
+    description: 'Boîte pour caméras dôme / bullet, étanche avec presse étoupe PG9.',
+    features: ['Plage de fixation : 45–110 mm', '40 pièces / carton'],
+    specs: { matériau: 'Plastique PP anti-UV', fixation: '45–110 mm' }
   },
   {
-    id: 6,
-    name: 'WS30-T',
+    id: 13,
+    name: 'WS30T',
     category: 'supports',
     image: 'assets/images/products/support-mural-telescopique-ws30t-30cm-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS30-T',
-    description: 'Support mural télescopique de 30cm pour réglage précis.',
-    features: ['Longueur réglable', 'Fixation solide', 'Ajustement précis'],
-    specs: { longueur: '300mm', matériau: 'Plastique ABS renforcé' }
+    altText: 'Support mural WS30T',
+    description: 'Support télescopique de 30 cm pour installation CCTV.',
+    features: ['Tube 2 mm d\'épaisseur', '30 pièces / carton'],
+    specs: { longueur: '300 mm', matériau: 'Plastique ABS renforcé' }
   },
   {
-    id: 7,
-    name: 'WS30-T90°',
-    category: 'supports',
-    image: 'assets/images/products/support-mural-angle-droit-ws30t90-30cm-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS30-T90°',
-    description: 'Support mural à angle droit de 30cm pour installation en coin.',
-    features: ['Angle 90°', 'Montage en coin', 'Stabilité optimale'],
-    specs: { longueur: '300mm', matériau: 'Plastique ABS renforcé' }
-  },
-  {
-    id: 8,
-    name: 'WS50-D',
-    category: 'supports',
-    image: 'assets/images/products/support-mural-droit-ws50d-50cm-camera-cctv-dahua-hikvision.png',
-    altText: 'Support mural WS50-D',
-    description: 'Support mural droit de 50cm pour installations longues portées.',
-    features: ['Longueur 50cm', 'Renforts internes', 'Résistance accrue'],
-    specs: { longueur: '500mm', matériau: 'Plastique ABS renforcé' }
+    id: 28,
+    name: 'TUBES IRO 20 MM',
+    category: 'iro',
+    image: 'assets/images/products/tube iro.jfif',
+    altText: 'Tube IRO 20 mm',
+    description: 'Tube IRO 20 mm en barre de 3 m.',
+    features: ['Barre de 3 m', '10 barres par fardeau'],
+    specs: { diamètre: '20 mm', longueur: '3 m' }
   }
 ];
 

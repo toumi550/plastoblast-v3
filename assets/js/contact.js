@@ -56,7 +56,6 @@ function validateForm(form) {
     const requiredFields = [
         'firstName',
         'lastName', 
-        'email',
         'phone',
         'productType',
         'message',
@@ -98,10 +97,7 @@ function validateField(field) {
             break;
             
         case 'email':
-            if (!fieldValue) {
-                isValid = false;
-                errorMessage = 'L\'email est requis';
-            } else if (!isValidEmail(fieldValue)) {
+            if (fieldValue && !isValidEmail(fieldValue)) {
                 isValid = false;
                 errorMessage = 'Format d\'email invalide';
             }
@@ -251,7 +247,7 @@ ${data.message}
 Merci de me recontacter pour finaliser cette demande.`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/213560006906?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/213559371692?text=${encodedMessage}`;
     
     // Rediriger après 3 secondes
     setTimeout(() => {
@@ -263,7 +259,8 @@ function getProductTypeLabel(value) {
     const labels = {
         'boites': 'Boîtes de jonction',
         'supports': 'Supports muraux',
-        'both': 'Les deux catégories',
+        'iro': 'Tubes IRO',
+        'both': 'Plusieurs catégories',
         'other': 'Autre (voir message)'
     };
     return labels[value] || value;

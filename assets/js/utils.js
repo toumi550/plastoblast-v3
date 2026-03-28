@@ -213,7 +213,7 @@ class PlastoblastUtils {
     }
     
     // Ouvrir WhatsApp avec un message
-    static openWhatsApp(message, phoneNumber = '213560006906') {
+    static openWhatsApp(message, phoneNumber = '213559371692') {
         const encodedMessage = encodeURIComponent(message);
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
         window.open(whatsappUrl, '_blank');
@@ -371,6 +371,11 @@ class PlastoblastBusiness {
                 id: 'supports',
                 name: 'Supports Muraux',
                 description: 'Supports muraux robustes pour caméras CCTV'
+            },
+            {
+                id: 'iro',
+                name: 'Tubes IRO',
+                description: 'Tubes IRO et accessoires de raccordement'
             }
         ];
     }
@@ -388,11 +393,11 @@ class PlastoblastBusiness {
     // Informations de contact
     static getContactInfo() {
         return {
-            phone: '+213560006906',
-            email: 'contact@plastoblast.dz',
+            phone: '+213559371692',
+            email: 'djemoi.mahdi.salim@plastoblast-dz.com',
             address: 'Alger, Algérie',
-            whatsapp: '213560006906',
-            workingHours: 'Lun-Ven: 8h-17h'
+            whatsapp: '213559371692',
+            workingHours: 'Sam-Jeu : 8h-17h'
         };
     }
     
