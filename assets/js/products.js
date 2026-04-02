@@ -4,6 +4,7 @@ const allProducts = [
     name: 'AJ120',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-aj120-camera-cctv-dahua-hikvision.jpg',
+    image2: 'assets/images/products/boite-jonction-aj120(2)-camera-cctv-dahua-hikvision.jpg',
     altText: 'Boîte de jonction AJ120',
     description: 'Boîte pour caméras dôme / bullet, étanche.',
     features: [
@@ -24,6 +25,7 @@ const allProducts = [
     name: 'AJ140',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-aj140-camera-cctv-dahua-hikvision.png',
+    image2: 'assets/images/products/boite-jonction-aj140(2)-camera-cctv-dahua-hikvision.png',
     altText: 'Boîte de jonction AJ140',
     description: 'Boîte pour caméras dôme / bullet, étanche.',
     features: [
@@ -44,6 +46,7 @@ const allProducts = [
     name: 'SJ110',
     category: 'boites',
     image: 'assets/images/products/boite-jonction-sj110-camera-cctv-dome-bullet-dahua-hikvision.png',
+    image2: 'assets/images/products/boite-jonction-sj110(2)-camera-cctv-dome-bullet-dahua-hikvision.jpg',
     altText: 'Boîte de jonction SJ110',
     description: 'Boîte pour caméras dôme / bullet, étanche.',
     features: [
@@ -64,6 +67,7 @@ const allProducts = [
     name: 'BJ110 VANDAL',
     category: 'boites',
     image: 'assets/images/products/bj110-vandal.png',
+    image2: 'assets/images/products/BJ110 VANDAL+.png',
     altText: 'Boîte de jonction BJ110 VANDAL',
     description: 'Boîte pour caméras dôme / bullet, étanche.',
     features: [
@@ -83,13 +87,14 @@ const allProducts = [
     name: 'BJ110 VANDAL +',
     category: 'boites',
     image: 'assets/images/products/bj110-vandal-plus.png',
+    image2: 'assets/images/products/BJ110 VANDAL + 2.png',
     altText: 'Boîte de jonction BJ110 VANDAL +',
     description: 'Boîte pour caméras dôme / bullet, étanche avec presse étoupe PG9.',
     features: [
       'Boîte pour caméras dôme / bullet, étanche',
       'Plage de fixation : 45–110 mm',
       'Avec presse étoupe PG9',
-      '40 pièces / carton'
+      '50 pièces / carton'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique BJ110.pdf',
     specs: {
@@ -701,13 +706,44 @@ function createProductCard(product, index) {
   card.className = 'product-card scroll-reveal';
   card.setAttribute('data-category', product.category);
   card.style.animationDelay = `${index * 0.1}s`;
-  
-  card.innerHTML = `
-    <div class="product-header-green">
-      <h3 class="product-name-header">${product.name}</h3>
-    </div>
-    <div class="product-body-mockup">
-      <div class="product-image-section">
+  const carouselId = `carousel-${product.id}-${index}`;
+  const hasCarousel = product.category === 'boites' && product.image2;
+  const hasZoom = product.category !== 'supports';
+  const imageContent = hasCarousel ? `
+        <div class="product-carousel" id="${carouselId}">
+          <div class="carousel-images">
+            <img
+              src="${product.image}"
+              alt="${product.altText || product.name}"
+              class="product-image active"
+              loading="lazy"
+              onerror="this.src='assets/images/placeholder-product.jpg'"
+            >
+            <img
+              src="${product.image2}"
+              alt="${product.altText || product.name}"
+              class="product-image"
+              loading="lazy"
+              onerror="this.src='assets/images/placeholder-product.jpg'"
+            >
+          </div>
+          <button type="button" class="carousel-btn carousel-prev" aria-label="Image précédente">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button type="button" class="carousel-btn carousel-next" aria-label="Image suivante">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" class="indicator active" aria-label="Voir la photo 1"></button>
+            <button type="button" class="indicator" aria-label="Voir la photo 2"></button>
+          </div>
+          <span class="product-image-zoom-label">Agrandir</span>
+        </div>
+      ` : hasZoom ? `
         <button type="button" class="product-image-button" aria-label="Agrandir l'image de ${product.name}">
           <img
             src="${product.image}"
@@ -718,6 +754,25 @@ function createProductCard(product, index) {
           >
           <span class="product-image-zoom-label">Agrandir</span>
         </button>
+      ` : `
+        <div class="product-image-button product-static-image" aria-label="Image du produit ${product.name}">
+          <img
+            src="${product.image}"
+            alt="${product.altText || product.name}"
+            class="product-image active"
+            loading="lazy"
+            onerror="this.src='assets/images/placeholder-product.jpg'"
+          >
+        </div>
+      `;
+  
+  card.innerHTML = `
+    <div class="product-header-green">
+      <h3 class="product-name-header">${product.name}</h3>
+    </div>
+    <div class="product-body-mockup">
+      <div class="product-image-section">
+        ${imageContent}
       </div>
     </div>
     <div class="product-description-bottom">
@@ -742,8 +797,40 @@ function createProductCard(product, index) {
   `;
 
   const imageButton = card.querySelector('.product-image-button');
-  if (imageButton) {
+  if (imageButton && hasZoom && !hasCarousel) {
     imageButton.addEventListener('click', () => openProductImageModal(product.image, product.altText || product.name));
+  }
+
+  if (hasCarousel) {
+    const carousel = card.querySelector(`#${carouselId}`);
+    const prevButton = carousel.querySelector('.carousel-prev');
+    const nextButton = carousel.querySelector('.carousel-next');
+    const indicators = carousel.querySelectorAll('.indicator');
+    const imageArea = carousel.querySelector('.carousel-images');
+
+    prevButton.addEventListener('click', event => {
+      event.stopPropagation();
+      changeCarouselImage(carouselId, -1);
+    });
+
+    nextButton.addEventListener('click', event => {
+      event.stopPropagation();
+      changeCarouselImage(carouselId, 1);
+    });
+
+    indicators.forEach((indicator, indicatorIndex) => {
+      indicator.addEventListener('click', event => {
+        event.stopPropagation();
+        goToCarouselImage(carouselId, indicatorIndex);
+      });
+    });
+
+    imageArea.addEventListener('click', () => {
+      const activeImage = carousel.querySelector('.product-image.active');
+      if (activeImage) {
+        openProductImageModal(activeImage.src, activeImage.alt);
+      }
+    });
   }
   
   return card;
@@ -858,7 +945,19 @@ function changeCarouselImage(carouselId, direction) {
 }
 
 function goToCarouselImage(carouselId, index) {
-  return { carouselId, index };
+  const carousel = document.getElementById(carouselId);
+  if (!carousel) return;
+
+  const images = carousel.querySelectorAll('.product-image');
+  const indicators = carousel.querySelectorAll('.indicator');
+
+  images.forEach(img => img.classList.remove('active'));
+  indicators.forEach(indicator => indicator.classList.remove('active'));
+
+  if (!images[index] || !indicators[index]) return;
+
+  images[index].classList.add('active');
+  indicators[index].classList.add('active');
 }
 
 // Export pour utilisation globale

@@ -658,6 +658,10 @@
   cursor: zoom-in;
 }
 
+.product-static-image {
+  cursor: default;
+}
+
 .product-image-zoom-label {
   position: absolute;
   bottom: 0.75rem;
@@ -845,6 +849,7 @@
 .product-image-section .carousel-images {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .product-image-section .product-image {
@@ -853,13 +858,29 @@
   object-fit: contain;
 }
 
+.product-carousel .product-image {
+  display: none;
+}
+
+.product-carousel .product-image.active {
+  display: block;
+}
+
 /* Fix carousel button visibility - STRONG CONTRAST */
 .product-image-section .carousel-btn {
+  position: absolute;
+  top: calc(50% - 20px);
   background: rgba(0, 0, 0, 0.7);
   border: 3px solid white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   width: 40px;
   height: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .product-image-section .carousel-btn:hover {
@@ -868,18 +889,36 @@
   transform: scale(1.2);
 }
 
+.product-image-section .carousel-prev {
+  left: -0.75rem;
+}
+
+.product-image-section .carousel-next {
+  right: -0.75rem;
+}
+
 .product-image-section .carousel-btn svg {
   stroke: white;
   stroke-width: 3;
 }
 
 .product-image-section .carousel-indicators {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -25px;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .product-image-section .indicator {
   background: var(--gray-300);
   border: 2px solid var(--primary-green);
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  padding: 0;
 }
 
 .product-image-section .indicator.active {
@@ -912,6 +951,14 @@
   .product-image-button {
     max-width: 250px;
     height: 250px;
+  }
+
+  .product-image-section .carousel-prev {
+    left: 0;
+  }
+
+  .product-image-section .carousel-next {
+    right: 0;
   }
   
   .price-amount {

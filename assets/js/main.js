@@ -47,7 +47,7 @@ const products = [
     image: 'assets/images/products/bj110-vandal-plus.png',
     altText: 'Boîte de jonction BJ110 VANDAL +',
     description: 'Boîte pour caméras dôme / bullet, étanche avec presse étoupe PG9.',
-    features: ['Plage de fixation : 45–110 mm', '40 pièces / carton'],
+    features: ['Plage de fixation : 45–110 mm', '50 pièces / carton'],
     specs: { matériau: 'Plastique PP anti-UV', fixation: '45–110 mm' }
   },
   {
@@ -252,7 +252,7 @@ window.addEventListener('resize', optimizedResize);
 
 // Préchargement images
 function preloadImages() {
-  const importantImages = ['assets/images/logo-plastoblast.webp'];
+  const importantImages = ['assets/images/logo-plastoblast.png'];
   importantImages.forEach(src => {
     const img = new Image();
     img.src = src;
