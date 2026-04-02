@@ -478,7 +478,7 @@
         
         .downloads-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
         }
         
@@ -632,6 +632,30 @@
             .btn-whatsapp {
                 width: 100%;
                 max-width: 300px;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .download-card,
+            .help-section {
+                padding: 1rem;
+            }
+
+            .download-content h3,
+            .help-content h2 {
+                font-size: 1.1rem;
+            }
+
+            .download-meta {
+                gap: 0.5rem;
+            }
+
+            .download-btn,
+            .btn-primary,
+            .btn-whatsapp {
+                width: 100%;
+                max-width: none;
                 justify-content: center;
             }
         }

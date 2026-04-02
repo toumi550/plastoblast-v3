@@ -2,7 +2,7 @@
 class PlastoblastUtils {
     
     // Gestion des erreurs d'images
-    static handleImageError(img, fallbackSrc = '/assets/images/placeholder-product.jpg') {
+    static handleImageError(img, fallbackSrc = 'assets/images/placeholder-product.jpg') {
         img.onerror = null; // Éviter les boucles infinies
         img.src = fallbackSrc;
         img.alt = 'Image non disponible';

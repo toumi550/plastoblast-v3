@@ -210,7 +210,7 @@ function createRelatedProductCard(product) {
     card.innerHTML = `
         <div class="related-product-image">
             <img src="${product.image}" alt="${product.altText || product.name}" 
-                 onerror="this.src='/assets/images/placeholder-product.jpg'">
+                 onerror="this.src='assets/images/placeholder-product.jpg'">
         </div>
         <div class="related-product-content">
             <h3>${product.name}</h3>

@@ -538,6 +538,34 @@
                 font-size: 2rem;
             }
         }
+
+        @media (max-width: 480px) {
+            .stats-grid,
+            .values-grid,
+            .partner-benefits {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-item,
+            .value-card,
+            .benefit-item {
+                padding: 1rem;
+            }
+
+            .stat-number {
+                font-size: 1.75rem;
+            }
+
+            .partner-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .partner-actions a {
+                width: 100%;
+                justify-content: center;
+            }
+        }
     </style>
 </body>
 </html>

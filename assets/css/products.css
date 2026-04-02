@@ -168,6 +168,7 @@
   color: var(--gray-600);
   margin-bottom: 0.75rem;
   line-height: 1.5;
+  word-break: break-word;
 }
 
 .category-count {
@@ -363,6 +364,7 @@
 
 .product-description.truncated {
   display: -webkit-box;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -482,6 +484,10 @@
   .hide-mobile {
     display: none !important;
   }
+
+  .page-header {
+    padding-top: 110px;
+  }
   
   .page-title {
     font-size: 2rem;
@@ -490,17 +496,37 @@
   .page-subtitle {
     font-size: 1rem;
   }
+
+  .products-title {
+    font-size: 1.75rem;
+  }
+
+  .products-subtitle {
+    font-size: 1rem;
+  }
   
   .back-button {
-    padding: 0.8rem 1.5rem;
-    font-size: 1.05rem;
-    min-width: 200px;
+    width: 100%;
+    min-width: 0;
+    margin: 0.5rem 0 1rem;
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
   }
   
   .categories-grid,
   .products-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .product-filters {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .search-bar {
+    max-width: none;
   }
   
   .category-content,
@@ -522,25 +548,36 @@
 
 @media (max-width: 480px) {
   .page-header {
-    padding-top: 120px;
+    padding-top: 108px;
     padding-bottom: 20px;
   }
   
   .page-title {
-    font-size: 1.75rem;
+    font-size: 1.55rem;
+    line-height: 1.25;
   }
   
   .back-button {
-    min-width: 160px;
+    min-width: 0;
     font-size: 0.95rem;
+  }
+
+  .categories-section,
+  .products-section {
+    padding: 1.5rem 0 3rem;
+  }
+
+  .category-card,
+  .product-card {
+    border-radius: 0.85rem;
   }
   
   .category-image {
-    height: 200px;
+    height: 180px;
   }
   
   .product-image-container {
-    height: 200px;
+    height: 180px;
   }
 }
 
@@ -887,5 +924,34 @@
 
   .product-actions-row {
     grid-template-columns: 1fr;
+  }
+
+  .product-secondary-btn,
+  .product-fiche-btn {
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-title,
+  .products-title {
+    font-size: 1.4rem;
+  }
+
+  .category-content,
+  .product-content,
+  .product-description-bottom,
+  .product-actions-row {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+
+  .product-image-button {
+    height: 220px;
+  }
+
+  .product-image-zoom-label {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.55rem;
   }
 }

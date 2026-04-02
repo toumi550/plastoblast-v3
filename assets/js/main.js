@@ -34,7 +34,7 @@ const products = [
     id: 4,
     name: 'BJ110 VANDAL',
     category: 'boites',
-    image: 'assets/images/products/BJ110 VANDAL.png',
+    image: 'assets/images/products/bj110-vandal.png',
     altText: 'Boîte de jonction BJ110 VANDAL',
     description: 'Boîte pour caméras dôme / bullet, étanche.',
     features: ['Plage de fixation : 45–110 mm', '50 pièces / carton'],
@@ -44,7 +44,7 @@ const products = [
     id: 5,
     name: 'BJ110 VANDAL +',
     category: 'boites',
-    image: 'assets/images/products/BJ110 VANDAL +.png',
+    image: 'assets/images/products/bj110-vandal-plus.png',
     altText: 'Boîte de jonction BJ110 VANDAL +',
     description: 'Boîte pour caméras dôme / bullet, étanche avec presse étoupe PG9.',
     features: ['Plage de fixation : 45–110 mm', '40 pièces / carton'],
@@ -64,7 +64,7 @@ const products = [
     id: 28,
     name: 'TUBES IRO 20 MM',
     category: 'iro',
-    image: 'assets/images/products/tube iro.jfif',
+    image: 'assets/images/products/tube-iro.jfif',
     altText: 'Tube IRO 20 mm',
     description: 'Tube IRO 20 mm en barre de 3 m.',
     features: ['Barre de 3 m', '10 barres par fardeau'],
@@ -99,35 +99,32 @@ function initMobileMenu() {
   const closeIcon = mobileMenuBtn.querySelector('.close-icon');
   
   if (!menuIcon || !closeIcon) return;
+
+  function setMobileMenuState(isOpen) {
+    mobileMenu.classList.toggle('active', isOpen);
+    mobileMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    menuIcon.style.display = isOpen ? 'none' : 'block';
+    closeIcon.style.display = isOpen ? 'block' : 'none';
+  }
+
+  mobileMenuBtn.setAttribute('aria-expanded', 'false');
+  setMobileMenuState(false);
   
   mobileMenuBtn.addEventListener('click', function() {
     const isOpen = mobileMenu.classList.contains('active');
-    
-    if (isOpen) {
-      mobileMenu.classList.remove('active');
-      menuIcon.style.display = 'block';
-      closeIcon.style.display = 'none';
-    } else {
-      mobileMenu.classList.add('active');
-      menuIcon.style.display = 'none';
-      closeIcon.style.display = 'block';
-    }
+    setMobileMenuState(!isOpen);
   });
   
   const mobileMenuItems = mobileMenu.querySelectorAll('.mobile-menu-item');
   mobileMenuItems.forEach(item => {
     item.addEventListener('click', function() {
-      mobileMenu.classList.remove('active');
-      menuIcon.style.display = 'block';
-      closeIcon.style.display = 'none';
+      setMobileMenuState(false);
     });
   });
   
   document.addEventListener('click', function(e) {
     if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-      mobileMenu.classList.remove('active');
-      menuIcon.style.display = 'block';
-      closeIcon.style.display = 'none';
+      setMobileMenuState(false);
     }
   });
 }

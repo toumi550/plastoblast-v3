@@ -63,7 +63,7 @@ const allProducts = [
     id: 4,
     name: 'BJ110 VANDAL',
     category: 'boites',
-    image: 'assets/images/products/BJ110 VANDAL.png',
+    image: 'assets/images/products/bj110-vandal.png',
     altText: 'Boîte de jonction BJ110 VANDAL',
     description: 'Boîte pour caméras dôme / bullet, étanche.',
     features: [
@@ -82,7 +82,7 @@ const allProducts = [
     id: 5,
     name: 'BJ110 VANDAL +',
     category: 'boites',
-    image: 'assets/images/products/BJ110 VANDAL +.png',
+    image: 'assets/images/products/bj110-vandal-plus.png',
     altText: 'Boîte de jonction BJ110 VANDAL +',
     description: 'Boîte pour caméras dôme / bullet, étanche avec presse étoupe PG9.',
     features: [
@@ -392,7 +392,7 @@ const allProducts = [
     id: 27,
     name: 'TUBES IRO 16 MM',
     category: 'iro',
-    image: 'assets/images/products/tube iro.jfif',
+    image: 'assets/images/products/tube-iro.jfif',
     altText: 'Tube IRO 16 mm',
     description: 'Tube IRO 16 mm en barre de 3 m.',
     features: [
@@ -406,7 +406,7 @@ const allProducts = [
     id: 28,
     name: 'TUBES IRO 20 MM',
     category: 'iro',
-    image: 'assets/images/products/tube iro.jfif',
+    image: 'assets/images/products/tube-iro.jfif',
     altText: 'Tube IRO 20 mm',
     description: 'Tube IRO 20 mm en barre de 3 m.',
     features: [
@@ -420,7 +420,7 @@ const allProducts = [
     id: 29,
     name: 'TUBES IRO 25 MM',
     category: 'iro',
-    image: 'assets/images/products/tube iro.jfif',
+    image: 'assets/images/products/tube-iro.jfif',
     altText: 'Tube IRO 25 mm',
     description: 'Tube IRO 25 mm en barre de 3 m.',
     features: [
@@ -434,7 +434,7 @@ const allProducts = [
     id: 30,
     name: 'TÉ IRO',
     category: 'iro',
-    image: 'assets/images/products/Té.jfif',
+    image: 'assets/images/products/te-iro.jfif',
     altText: 'Té IRO',
     description: 'Té disponible en diamètre 16, 20 et 25 mm.',
     features: [
@@ -460,7 +460,7 @@ const allProducts = [
     id: 32,
     name: 'COUDE À ANGLE DOUX',
     category: 'iro',
-    image: 'assets/images/products/Coude a angle doux .webp',
+    image: 'assets/images/products/coude-angle-doux.webp',
     altText: 'Coude à angle doux IRO',
     description: 'Coude à angle doux disponible en diamètre 16, 20 et 25 mm.',
     features: [
@@ -514,7 +514,7 @@ const categories = [
     id: 'iro',
     name: 'TUBES IRO',
     description: 'Tubes IRO et accessoires de raccordement pour le cheminement propre et durable des installations électriques.',
-    image: 'assets/images/products/tube iro.jfif',
+    image: 'assets/images/products/tube-iro.jfif',
     count: allProducts.filter(p => p.category === 'iro').length,
     icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M4 7h10a3 3 0 0 1 0 6H6a3 3 0 0 0 0 6h14"/>
@@ -642,7 +642,7 @@ function createCategoryCard(category) {
       <img 
         src="${category.image}" 
         alt="Image pour ${category.name}"
-        onerror="this.src='/assets/images/placeholder-product.jpg'"
+        onerror="this.src='assets/images/placeholder-product.jpg'"
       >
     </div>
     <div class="category-content">
@@ -714,7 +714,7 @@ function createProductCard(product, index) {
             alt="${product.altText || product.name}"
             class="product-image active"
             loading="lazy"
-            onerror="this.src='/assets/images/placeholder-product.jpg'"
+            onerror="this.src='assets/images/placeholder-product.jpg'"
           >
           <span class="product-image-zoom-label">Agrandir</span>
         </button>
