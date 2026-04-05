@@ -64,31 +64,35 @@ const allProducts = [
   },
   {
     id: 4,
-    name: 'BJ110 VANDAL',
+    name: 'BJ110 VANDAL - Boîte de jonction étanche pour caméras',
     category: 'boites',
-    image: 'assets/images/products/BJ110 VANDAL.png',
-    altText: 'Boîte de jonction BJ110 VANDAL',
-    description: 'Boîte pour caméras dôme / bullet, étanche.',
+    image: 'assets/images/products/BJ110 VANDAL 1.png',
+    image2: 'assets/images/products/BJ110 VANDAL 2.png',
+    altText: 'Boîte de jonction BJ110 VANDAL - Protection caméras dôme bullet',
+    description: 'Boîte de jonction étanche pour caméras dôme et bullet, protection anti-vandalisme.',
     features: [
       'Boîte pour caméras dôme / bullet, étanche',
       'Plage de fixation : 45–110 mm',
-      '50 pièces / carton'
+      '50 pièces / carton',
+      'Protection anti-vandalisme',
+      'Installation facile et sécurisée'
     ],
     ficheTechnique: 'assets/downloads/Fiche Technique BJ110.pdf',
     specs: {
       matériau: 'Plastique (PP), anti-UV, anti-choc',
       fixation: '45–110 mm',
-      usage: 'Intérieur / extérieur'
+      usage: 'Intérieur / extérieur',
+      protection: 'Anti-vandalisme'
     }
   },
   {
     id: 5,
-    name: 'BJ110 VANDAL +',
+    name: 'BJ110 VANDAL + - Boîte jonction étanche avec presse étoupe',
     category: 'boites',
     image: 'assets/images/products/BJ110 VANDAL+.png',
     image2: 'assets/images/products/BJ110 VANDAL + 2.png',
-    altText: 'Boîte de jonction BJ110 VANDAL +',
-    description: 'Boîte pour caméras dôme / bullet, étanche avec presse étoupe PG9.',
+    altText: 'Boîte de jonction BJ110 VANDAL + Avec presse étoupe PG9',
+    description: 'Boîte de jonction étanche pour caméras avec presse étoupe PG9, protection renforcée.',
     features: [
       'Boîte pour caméras dôme / bullet, étanche',
       'Plage de fixation : 45–110 mm',
