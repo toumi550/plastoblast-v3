@@ -302,7 +302,7 @@ body {
     justify-content: flex-start;
     width: 100%;
     min-height: 56px;
-    padding: 0 4.25rem 0 0.85rem;
+    padding: 0 3.5rem 0 0.85rem;
   }
   
   .mobile-menu-button {
@@ -321,7 +321,7 @@ body {
     margin-left: 0;
     position: absolute;
     top: 50%;
-    right: 0.9rem;
+    right: 0.5rem;
     transform: translateY(-50%);
     z-index: 4000;
     order: 2;
@@ -449,11 +449,27 @@ body {
 
   .header-flex-mobile {
     min-height: 54px;
-    padding: 0 4rem 0 0.65rem;
+    padding: 0 3.5rem 0 0.65rem;
   }
 
   .mobile-menu-button {
-    right: 0.75rem;
+    margin-right: 0.25rem;
+  }
+  
+  /* Homepage specific positioning */
+  body.homepage .mobile-menu-button {
+    right: 2.7rem !important;
+    margin-right: 0.5rem !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    filter: none !important;
+    background: transparent !important;
+  }
+  
+  /* Homepage close icon positioning */
+  body.homepage .mobile-menu-button .close-icon {
+    display: none !important;
   }
   
   .header-top-center {

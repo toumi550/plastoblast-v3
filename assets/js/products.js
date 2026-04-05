@@ -66,8 +66,7 @@ const allProducts = [
     id: 4,
     name: 'BJ110 VANDAL',
     category: 'boites',
-    image: 'assets/images/products/bj110-vandal.png',
-    image2: 'assets/images/products/BJ110 VANDAL+.png',
+    image: 'assets/images/products/BJ110 VANDAL.png',
     altText: 'Boîte de jonction BJ110 VANDAL',
     description: 'Boîte pour caméras dôme / bullet, étanche.',
     features: [
@@ -86,7 +85,7 @@ const allProducts = [
     id: 5,
     name: 'BJ110 VANDAL +',
     category: 'boites',
-    image: 'assets/images/products/bj110-vandal-plus.png',
+    image: 'assets/images/products/BJ110 VANDAL+.png',
     image2: 'assets/images/products/BJ110 VANDAL + 2.png',
     altText: 'Boîte de jonction BJ110 VANDAL +',
     description: 'Boîte pour caméras dôme / bullet, étanche avec presse étoupe PG9.',

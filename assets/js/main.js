@@ -122,6 +122,13 @@ function initMobileMenu() {
     });
   });
   
+  // Close menu when clicking on the empty background area
+  mobileMenu.addEventListener('click', function(e) {
+    if (e.target === mobileMenu) {
+      setMobileMenuState(false);
+    }
+  });
+  
   document.addEventListener('click', function(e) {
     if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
       setMobileMenuState(false);
