@@ -66,8 +66,8 @@ const allProducts = [
     id: 4,
     name: 'BJ110 VANDAL',
     category: 'boites',
-    image: 'assets/images/products/BJ110 VANDAL 1.png',
-    image2: 'assets/images/products/BJ110 VANDAL 2.png',
+    image: 'assets/images/products/BJ110%20VANDAL%201.png',
+    image2: 'assets/images/products/BJ110%20VANDAL%202.png',
     altText: 'Boîte de jonction BJ110 VANDAL - Boîte de jonction étanche pour caméras',
     description: 'Boîte de jonction étanche pour caméras dôme et bullet, protection anti-vandalisme.',
     features: [
