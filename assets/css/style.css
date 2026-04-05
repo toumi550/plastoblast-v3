@@ -458,7 +458,7 @@ body {
   
   /* Homepage specific positioning */
   body.homepage .mobile-menu-button {
-    right: 3.5rem !important;
+    right: 3rem !important;
     margin-right: 0.5rem !important;
     outline: none !important;
     box-shadow: none !important;
