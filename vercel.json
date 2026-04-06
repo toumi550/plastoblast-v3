@@ -1,13 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/assets/downloads/Catalogue%20Aplati%20Final.pdf",
-      "destination": "https://www.plastoblast-dz.com/assets/downloads/Catalogue%20Aplati%20Final%20(prix%20et%20descriptif%20).pdf",
-      "permanent": true
-    },
-    {
-      "source": "/assets/downloads/Catalogue%20Aplati%20Final%20(prix%20et%20descriptif%20).pdf",
-      "destination": "https://www.plastoblast-dz.com/assets/downloads/Catalogue%20Aplati%20Final%20(prix%20et%20descriptif%20).pdf",
+      "source": "/((?!assets|.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|pdf|webp)).*)",
+      "destination": "https://www.plastoblast-dz.com/$1",
       "permanent": true
     }
   ]
