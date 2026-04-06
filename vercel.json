@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/catalogue",
-      "destination": "https://www.plastoblast-dz.com/assets/downloads/Catalogue Aplati Final.pdf",
+      "destination": "/assets/downloads/Catalogue des prix.pdf",
       "permanent": true
     }
   ]
