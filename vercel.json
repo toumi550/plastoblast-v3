@@ -1,30 +1,9 @@
 {
   "redirects": [
     {
-      "source": "/test",
-      "destination": "/assets/downloads/test.txt",
-      "permanent": true
-    },
-    {
       "source": "/catalogue",
-      "destination": "/assets/downloads/Catalogue Aplati Final.pdf",
+      "destination": "https://www.plastoblast-dz.com/assets/downloads/Catalogue Aplati Final.pdf",
       "permanent": true
     }
-  ],
-  "headers": [
-    {
-      "source": "/assets/downloads/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/pdf"
-        }
-      ]
-    }
-  ],
-  "version": "2026-04-06-test"
+  ]
 }
