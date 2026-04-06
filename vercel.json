@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/assets/downloads/Catalogue%20Aplati%20Final.pdf",
+      "destination": "/assets/downloads/Catalogue%20des%20prix.pdf",
+      "permanent": true
+    }
+  ]
+}
