@@ -1,13 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/assets/downloads/Catalogue%20Aplati%20Final.pdf",
-      "destination": "https://www.plastoblast-dz.com/assets/downloads/Catalogue%20Aplati%20Final%20(prix%20et%20descriptif%20).pdf",
-      "permanent": true
-    },
-    {
-      "source": "/assets/downloads/Catalogue%20Aplati%20Final%20(prix%20et%20descriptif%20).pdf",
-      "destination": "https://www.plastoblast-dz.com/assets/downloads/Catalogue%20Aplati%20Final%20(prix%20et%20descriptif%20).pdf",
+      "source": "/catalogue",
+      "destination": "/assets/downloads/Catalogue Aplati Final.pdf",
       "permanent": true
     }
   ]
