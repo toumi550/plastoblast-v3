@@ -1,0 +1,6 @@
+# Test File
+
+This is a test file to check if Vercel can serve files from the downloads folder.
+
+If you can read this, then the folder structure is working.
+The issue might be with the large PDF files.

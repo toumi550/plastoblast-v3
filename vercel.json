@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/test",
+      "destination": "/assets/downloads/test.txt",
+      "permanent": true
+    },
+    {
       "source": "/catalogue",
       "destination": "/assets/downloads/Catalogue Aplati Final.pdf",
       "permanent": true
@@ -21,5 +26,5 @@
       ]
     }
   ],
-  "version": "2026-04-06-final"
+  "version": "2026-04-06-test"
 }
